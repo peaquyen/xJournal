@@ -29,6 +29,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "DiaryApp"
 include(":app")
-
-//for git testing sake
-//for checkout revert testing sake

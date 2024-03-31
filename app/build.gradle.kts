@@ -27,12 +27,12 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
     }
+
     // sets the configuration for the release build type. This block is optional
     buildTypes {
         release {
@@ -54,6 +54,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
     // The buildFeatures block enables or disables specific features of the Android
     buildFeatures {
         compose = true
