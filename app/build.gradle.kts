@@ -13,6 +13,7 @@ plugins {
     // for Android
     id ("com.google.gms.google-services") version "4.3.14" apply false
     // services to your project
+    kotlin("kapt")
 }
 
 android {
@@ -92,6 +93,24 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // include navigation components
+    val nav_version = "2.5.3"
+    implementation("androidx.navigation:navigation-compose:$nav_version")
+
+    // include room components
+    val room_version = "2.5.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:$room_version")
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+
+    // include runtime components
+    implementation("androidx.compose.runtime:runtime:1.3.3")
+    implementation("androidx.compose.runtime:runtime-livedata:1.3.3")
+    implementation("androidx.compose.runtime:runtime-rxjava2:1.3.3")
 }
 
 // The kotlin block configures the Kotlin plugin for the project.
