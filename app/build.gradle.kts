@@ -7,13 +7,12 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("io.realm.kotlin") version "1.14.1"// Realm is a mobile database that runs
     // directly
-    id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin") //version "2.38.1'" apply false
     // version "2.38.1" // Hilt is a dependency injection library
     // for Android
     id ("com.google.gms.google-services") version "4.3.14" apply false
     // services to your project
-    kotlin("kapt")
+    id ("kotlin-kapt")
 }
 
 android {
@@ -75,9 +74,6 @@ android {
 // and more. For example, implementation(libs.androidx.core.ktx)
 // includes the AndroidX Core KTX library in the project.
 dependencies {
-    // dagger hilt (2)
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -93,24 +89,64 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    // include navigation components
-    val nav_version = "2.5.3"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
 
-    // include room components
-    val room_version = "2.5.0"
+    // Compose Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+    // ROOM components
+    val room_version = "2.6.0"
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room_version")
 
-    // Import the Firebase BoM
+    // Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
 
-    // include runtime components
+    // Runtime Compose
     implementation("androidx.compose.runtime:runtime:1.3.3")
     implementation("androidx.compose.runtime:runtime-livedata:1.3.3")
     implementation("androidx.compose.runtime:runtime-rxjava2:1.3.3")
+
+    // Splash API
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
+    // MongoDB Realm
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"){
+        version {
+            strictly("1.7.1")
+        }
+    }
+    implementation("io.realm.kotlin:library-sync:1.14.1")
+
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt ("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+
+    // Google Auth
+    // implementation("com.google.android.gms:play-services-auth:19.2.0")
+
+    // Coil: An image loading library for Android backed by Kotlin Coroutines.
+    implementation("io.coil-kt:coil-compose:2.6.0")
+
+    // Pager - Accompanist: -> This library is deprecated, with official pager
+    // support in androidx.compose.foundation.pager.
+    implementation("com.google.accompanist:accompanist-pager:0.35.0-alpha")
+
+    // Date-Time Picker -> should change to official library
+    implementation("io.github.vanpra.compose-material-dialogs:datetime:0.9.0")
+
+    // Message Bar Compose: -> ok
+    implementation("com.github.stevdza-san:MessageBarCompose:1.0.8")
+
+    // One-Tap Compose: easily integrate One-Tap Sign in with Google
+    // -> oh no
+    implementation("com.github.stevdza-san.OneTapCompose:1.0.12")
+
+    // Desugar JDK: help certain code in the app without api required
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
+
 }
 
 // The kotlin block configures the Kotlin plugin for the project.

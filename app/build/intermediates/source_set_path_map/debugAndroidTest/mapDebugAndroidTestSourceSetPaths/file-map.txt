@@ -1,0 +1,35 @@
+com.github.peaquyen.diaryapp.test.app-ui-graphics-release-0 C:\Users\Pea Quyen\.gradle\caches\transforms-3\001376993adce9fb2f9a1883f0e8dd0d\transformed\ui-graphics-release\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-viewmodel-ktx-2.7.0-1 C:\Users\Pea Quyen\.gradle\caches\transforms-3\018f10cc39d8e28c511c501259d1cc4f\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-emoji2-1.4.0-2 C:\Users\Pea Quyen\.gradle\caches\transforms-3\07ec7de3eb5082b2045c6c24d562903c\transformed\emoji2-1.4.0\res
+com.github.peaquyen.diaryapp.test.app-activity-1.8.2-3 C:\Users\Pea Quyen\.gradle\caches\transforms-3\0d73084e13868e09a06a79c6f574577e\transformed\activity-1.8.2\res
+com.github.peaquyen.diaryapp.test.app-activity-ktx-1.8.2-4 C:\Users\Pea Quyen\.gradle\caches\transforms-3\1475ae8656bad47f6048105c1b09db57\transformed\activity-ktx-1.8.2\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-runtime-2.7.0-5 C:\Users\Pea Quyen\.gradle\caches\transforms-3\16d6073024c7d1697a7eefddb69cf00e\transformed\lifecycle-runtime-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-activity-compose-1.8.2-6 C:\Users\Pea Quyen\.gradle\caches\transforms-3\33c746b9b31916464b81dcc4b35aa9ad\transformed\activity-compose-1.8.2\res
+com.github.peaquyen.diaryapp.test.app-ui-test-release-7 C:\Users\Pea Quyen\.gradle\caches\transforms-3\34ab59f01af955ce8578df211026a4d3\transformed\ui-test-release\res
+com.github.peaquyen.diaryapp.test.app-core-1.5.0-8 C:\Users\Pea Quyen\.gradle\caches\transforms-3\353bf2089c015f16d95e41fc71f53f20\transformed\core-1.5.0\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-runtime-ktx-2.7.0-9 C:\Users\Pea Quyen\.gradle\caches\transforms-3\395c024d958a0f76b9adad0691d0fd58\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-ui-text-release-10 C:\Users\Pea Quyen\.gradle\caches\transforms-3\4079b6a10807354f20baa03a6f9c4f1b\transformed\ui-text-release\res
+com.github.peaquyen.diaryapp.test.app-runtime-saveable-release-11 C:\Users\Pea Quyen\.gradle\caches\transforms-3\41107c27bc6836e1bba4af366a33dff9\transformed\runtime-saveable-release\res
+com.github.peaquyen.diaryapp.test.app-customview-poolingcontainer-1.0.0-12 C:\Users\Pea Quyen\.gradle\caches\transforms-3\46649803c1d3e3df89396620d2e82bf8\transformed\customview-poolingcontainer-1.0.0\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-process-2.7.0-13 C:\Users\Pea Quyen\.gradle\caches\transforms-3\4b11d22735c42b052c888153d7ad1ca4\transformed\lifecycle-process-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-core-1.12.0-14 C:\Users\Pea Quyen\.gradle\caches\transforms-3\4db716c8d57e9dd9a4e39e9e3d6a6063\transformed\core-1.12.0\res
+com.github.peaquyen.diaryapp.test.app-ui-util-release-15 C:\Users\Pea Quyen\.gradle\caches\transforms-3\51a6f8771c011727956ac33a605e7837\transformed\ui-util-release\res
+com.github.peaquyen.diaryapp.test.app-savedstate-ktx-1.2.1-16 C:\Users\Pea Quyen\.gradle\caches\transforms-3\6641b9d0c3aee21816ae0f42f8122a9e\transformed\savedstate-ktx-1.2.1\res
+com.github.peaquyen.diaryapp.test.app-annotation-experimental-1.3.0-17 C:\Users\Pea Quyen\.gradle\caches\transforms-3\666519cfd26dfd783386f44d9fd8429f\transformed\annotation-experimental-1.3.0\res
+com.github.peaquyen.diaryapp.test.app-ui-geometry-release-18 C:\Users\Pea Quyen\.gradle\caches\transforms-3\667cb4c4b5691ab66a7ac56fc5f88176\transformed\ui-geometry-release\res
+com.github.peaquyen.diaryapp.test.app-profileinstaller-1.3.0-19 C:\Users\Pea Quyen\.gradle\caches\transforms-3\6b2178fded714f750b0007fadbdd445c\transformed\profileinstaller-1.3.0\res
+com.github.peaquyen.diaryapp.test.app-core-ktx-1.12.0-20 C:\Users\Pea Quyen\.gradle\caches\transforms-3\74b5b2498385cfe17dc436fe8cc88f0f\transformed\core-ktx-1.12.0\res
+com.github.peaquyen.diaryapp.test.app-ui-release-21 C:\Users\Pea Quyen\.gradle\caches\transforms-3\7ee908a5d89bdeebe0e0983e0860c238\transformed\ui-release\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-viewmodel-savedstate-2.7.0-22 C:\Users\Pea Quyen\.gradle\caches\transforms-3\942d39a87da120041ad3c72f63f77e1e\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-ui-test-junit4-release-23 C:\Users\Pea Quyen\.gradle\caches\transforms-3\964b67c5f9ecaa95fa3bda942bc94f3a\transformed\ui-test-junit4-release\res
+com.github.peaquyen.diaryapp.test.app-savedstate-1.2.1-24 C:\Users\Pea Quyen\.gradle\caches\transforms-3\a8259452ae92eb59405eed697a97bc22\transformed\savedstate-1.2.1\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-viewmodel-2.7.0-25 C:\Users\Pea Quyen\.gradle\caches\transforms-3\a82a6f8c6b66f8c8d11965d4a7ead296\transformed\lifecycle-viewmodel-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-ui-unit-release-26 C:\Users\Pea Quyen\.gradle\caches\transforms-3\cc67eeca41756d1f0609606cd97baffd\transformed\ui-unit-release\res
+com.github.peaquyen.diaryapp.test.app-core-runtime-2.2.0-27 C:\Users\Pea Quyen\.gradle\caches\transforms-3\cc84afaccf38c46b8a4a6e7c37557af2\transformed\core-runtime-2.2.0\res
+com.github.peaquyen.diaryapp.test.app-lifecycle-livedata-core-2.7.0-28 C:\Users\Pea Quyen\.gradle\caches\transforms-3\d1a989a2d84903b3d6633c0855b7d99f\transformed\lifecycle-livedata-core-2.7.0\res
+com.github.peaquyen.diaryapp.test.app-runtime-release-29 C:\Users\Pea Quyen\.gradle\caches\transforms-3\d9652bc480940800beee9bcbf998c755\transformed\runtime-release\res
+com.github.peaquyen.diaryapp.test.app-startup-runtime-1.1.1-30 C:\Users\Pea Quyen\.gradle\caches\transforms-3\fa87f7a8cb9de9fa94e97d0a6f128299\transformed\startup-runtime-1.1.1\res
+com.github.peaquyen.diaryapp.test.app-androidTest-31 C:\Users\PeaQuyen\AndroidStudioProjects\DiaryApp\app\build\generated\res\resValues\androidTest\debug
+com.github.peaquyen.diaryapp.test.app-mergeDebugAndroidTestResources-32 C:\Users\PeaQuyen\AndroidStudioProjects\DiaryApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.github.peaquyen.diaryapp.test.app-mergeDebugAndroidTestResources-33 C:\Users\PeaQuyen\AndroidStudioProjects\DiaryApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.github.peaquyen.diaryapp.test.app-debugAndroidTest-34 C:\Users\PeaQuyen\AndroidStudioProjects\DiaryApp\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
