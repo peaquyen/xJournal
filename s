@@ -33,7 +33,7 @@
 [32m+[m[32m    }[m
 [32m+[m[32m}[m
 [32m+[m
-[32m+[m[32mrootProject.name = "DiaryApp"[m
+[32m+[m[32mrootProject.name = "xJournal"[m
 [32m+[m[32minclude(":app")[m
 [32m+[m
 [32m+[m[32m//for git testing sake[m

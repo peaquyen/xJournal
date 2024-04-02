@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.diaryapp-mergeDebugResources-57:/values-v21/values-v21.xml",
+            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-2:/values-v21/values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\faf9a88efccb7e6a6b59f2efae04e62e\\transformed\\core-1.12.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\80b4e374623a426a66391b57762c6e92\\transformed\\core-1.12.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

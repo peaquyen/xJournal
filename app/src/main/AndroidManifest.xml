@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--The Android Gradle plugin uses this file to gather essential information-->
+<?xml version="1.0" encoding="utf-8"?><!--The Android Gradle plugin uses this file to gather essential information-->
 <!--about your app, such as the app's package name, components-->
 <!--(activities, services, etc.), permissions, and other features.-->
 
@@ -10,7 +9,7 @@ The <application> tag is a container for all other components such as <activity>
 <service>, <receiver>, and <provider>. This tag is used to specify
 global application settings such as the application icon, label, theme, etc.-->
 
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -18,16 +17,15 @@ global application settings such as the application icon, label, theme, etc.-->
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="xJournal"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DiaryApp"
+        android:theme="@style/Theme.xJournal"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.DiaryApp">
+            android:theme="@style/Theme.xJournal.MySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

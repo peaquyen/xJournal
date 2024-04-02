@@ -7,22 +7,22 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("io.realm.kotlin") version "1.14.1"// Realm is a mobile database that runs
     // directly
-    id ("dagger.hilt.android.plugin") //version "2.38.1'" apply false
+    id("dagger.hilt.android.plugin") //version "2.38.1'" apply false
     // version "2.38.1" // Hilt is a dependency injection library
     // for Android
-    id ("com.google.gms.google-services") version "4.3.14" apply false
+    id("com.google.gms.google-services") version "4.3.14" apply false
     // services to your project
-    id ("kotlin-kapt")
+    id("kotlin-kapt")
 }
 
 android {
     // configuration specific to the Android application
-    namespace = "com.github.peaquyen.diaryapp"
+    namespace = "com.github.peaquyen.xJournal"
     compileSdk = 34
 
     // sets the default configuration for all build types. This block is optional
     defaultConfig {
-        applicationId = "com.github.peaquyen.diaryapp"
+        applicationId = "com.github.peaquyen.xJournal"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -112,7 +112,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.0.1")
 
     // MongoDB Realm
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"){
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0") {
         version {
             strictly("1.7.1")
         }
@@ -121,7 +121,7 @@ dependencies {
 
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.44")
-    kapt ("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Google Auth
@@ -142,7 +142,7 @@ dependencies {
 
     // One-Tap Compose: easily integrate One-Tap Sign in with Google
     // -> oh no
-    implementation("com.github.stevdza-san.OneTapCompose:1.0.12")
+//    implementation("com.github.stevdza-san.OneTapCompose:1.0.11")
 
     // Desugar JDK: help certain code in the app without api required
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")

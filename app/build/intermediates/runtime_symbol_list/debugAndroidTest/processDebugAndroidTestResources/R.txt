@@ -178,11 +178,11 @@ int string in_progress 0x7f08000d
 int string indeterminate 0x7f08000e
 int string navigation_menu 0x7f08000f
 int string not_selected 0x7f080010
-int string off 0x7f080011
-int string on 0x7f080012
-int string range_end 0x7f080013
-int string range_start 0x7f080014
-int string selected 0x7f080015
+int string range_end 0x7f080011
+int string range_start 0x7f080012
+int string selected 0x7f080013
+int string state_off 0x7f080014
+int string state_on 0x7f080015
 int string status_bar_notification_info_overflow 0x7f080016
 int string switch_role 0x7f080017
 int string tab 0x7f080018

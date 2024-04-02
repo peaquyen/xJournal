@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.peaquyen.diaryapp.test" >
+    package="com.github.peaquyen.xJournal.test" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -10,8 +10,8 @@
         android:name="androidx.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.github.peaquyen.diaryapp"
-        android:targetPackage="com.github.peaquyen.diaryapp" />
+        android:label="Tests for com.github.peaquyen.xJournal"
+        android:targetPackage="com.github.peaquyen.xJournal" />
 
     <uses-permission android:name="android.permission.REORDER_TASKS" />
 

@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.github.peaquyen.diaryapp.test",
+  "applicationId": "com.github.peaquyen.xJournal.test",
   "variantName": "debugAndroidTest",
   "elements": [
     {

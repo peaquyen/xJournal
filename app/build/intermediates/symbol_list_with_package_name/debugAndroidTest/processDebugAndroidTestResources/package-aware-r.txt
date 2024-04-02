@@ -1,4 +1,4 @@
-com.github.peaquyen.diaryapp.test
+com.github.peaquyen.xJournal.test
 attr alpha
 attr font
 attr fontProviderAuthority
@@ -179,11 +179,11 @@ string in_progress
 string indeterminate
 string navigation_menu
 string not_selected
-string off
-string on
 string range_end
 string range_start
 string selected
+string state_off
+string state_on
 string status_bar_notification_info_overflow
 string switch_role
 string tab

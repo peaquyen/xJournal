@@ -11,7 +11,7 @@ The <application> tag is a container for all other components such as <activity>
 global application settings such as the application icon, label, theme, etc.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.peaquyen.diaryapp"
+    package="com.github.peaquyen.xJournal"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -19,13 +19,14 @@ global application settings such as the application icon, label, theme, etc.
         android:minSdkVersion="21"
         android:targetSdkVersion="34" />
 
-    <permission
-        android:name="com.github.peaquyen.diaryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.github.peaquyen.diaryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.github.peaquyen.xJournal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.github.peaquyen.xJournal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -35,40 +36,38 @@ global application settings such as the application icon, label, theme, etc.
         android:extractNativeLibs="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="xJournal"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DiaryApp" >
+        android:theme="@style/Theme.xJournal" >
         <activity
-            android:name="com.github.peaquyen.diaryapp.MainActivity"
+            android:name="com.github.peaquyen.xJournal.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.DiaryApp" >
+            android:theme="@style/Theme.xJournal.MySplash" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="androidx.activity.ComponentActivity"
-            android:exported="true" />
-        <activity
-            android:name="androidx.compose.ui.tooling.PreviewActivity"
-            android:exported="true" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.github.peaquyen.diaryapp.androidx-startup"
+            android:authorities="com.github.peaquyen.xJournal.androidx-startup"
             android:exported="false" >
+            <meta-data
+                android:name="io.realm.kotlin.mongodb.internal.RealmSyncInitializer"
+                android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 android:value="androidx.startup" />
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-                android:value="androidx.startup" />
-            <meta-data
-                android:name="io.realm.kotlin.mongodb.internal.RealmSyncInitializer"
                 android:value="androidx.startup" />
             <meta-data
                 android:name="io.realm.kotlin.internal.RealmInitializer"
@@ -78,10 +77,12 @@ global application settings such as the application icon, label, theme, etc.
                 android:value="androidx.startup" />
         </provider>
 
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"
