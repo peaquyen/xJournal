@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.xJournal.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFBFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/journal</item>
+        <item name="postSplashScreenTheme">@style/Theme.xJournal</item>
+        <!--to get back to the main screen-->
+    </style>
+</resources>
