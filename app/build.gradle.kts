@@ -5,6 +5,7 @@ plugins {
     // Android application plugin, Kotlin Android plugin, Realm, Dagger Hilt, and Google Services
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    //id("build.gradle.kts")
     id("io.realm.kotlin") version "1.14.1"// Realm is a mobile database that runs
     // directly
     id("dagger.hilt.android.plugin") //version "2.38.1'" apply false
@@ -12,7 +13,9 @@ plugins {
     // for Android
     id("com.google.gms.google-services") version "4.3.14" apply false
     // services to your project
+
     id("kotlin-kapt")
+
 }
 
 android {
@@ -30,6 +33,14 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
+        }
+
+        compileOptions {
+            sourceCompatibility = JavaVersion.VERSION_18
+            targetCompatibility = JavaVersion.VERSION_18
+        }
+        kotlinOptions {
+            jvmTarget = "18"
         }
     }
 
@@ -120,7 +131,7 @@ dependencies {
     implementation("io.realm.kotlin:library-sync:1.14.1")
 
     // Dagger Hilt
-    implementation("com.google.dagger:hilt-android:2.44")
+    implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
