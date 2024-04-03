@@ -16,12 +16,12 @@
                 {
                     "source": "A:\\AndroidAlternativeProjects\\xJournal\\app\\src\\main\\res\\values-night\\splash.xml",
                     "from": {
-                        "startLines": "2",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
+                        "startOffsets": "59",
+                        "endLines": "7",
                         "endColumns": "12",
-                        "endOffsets": "354"
+                        "endOffsets": "356"
                     },
                     "to": {
                         "startLines": "3",
