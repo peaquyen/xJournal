@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-36:12
-INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-36:12
-INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-36:12
-INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-36:12
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-35:12
+INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-35:12
+INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-35:12
+INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:1-35:12
 MERGED from [io.github.vanpra.compose-material-dialogs:datetime:0.9.0] C:\Users\ADMIN\.gradle\caches\transforms-4\272319aa99bd394a6d875edaf9e728d5\transformed\datetime-0.9.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.stevdza-san:MessageBarCompose:1.0.8] C:\Users\ADMIN\.gradle\caches\transforms-4\50ade5cc665d9c3b1ed79885392a91ad\transformed\MessageBarCompose-1.0.8\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\d74ea3d504ce92b7d3358a5629bda3f1\transformed\room-runtime-2.6.0\AndroidManifest.xml:17:1-31:12
@@ -101,8 +101,8 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\ADMIN\.gradle\cac
 	xmlns:android
 		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:12:11-69
 application
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:15:5-34:19
-INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:15:5-34:19
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:14:5-33:19
+INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:14:5-33:19
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\d74ea3d504ce92b7d3358a5629bda3f1\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\d74ea3d504ce92b7d3358a5629bda3f1\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
 MERGED from [io.realm.kotlin:library-sync-android:1.14.1] C:\Users\ADMIN\.gradle\caches\transforms-4\2bfe50560c50f9fe968bd993a0843560\transformed\library-sync-release\AndroidManifest.xml:29:5-39:19
@@ -130,41 +130,41 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ADMIN\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\ADMIN\.gradle\caches\transforms-4\80b4e374623a426a66391b57762c6e92\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:20:9-33
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:19:9-33
 	android:fullBackupContent
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:18:9-54
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:17:9-54
 	android:roundIcon
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:21:9-54
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:20:9-54
 	tools:targetApi
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:24:9-29
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:23:9-29
 	android:icon
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:19:9-43
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:18:9-43
 	android:allowBackup
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:23:9-46
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:22:9-46
 	android:dataExtractionRules
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:17:9-65
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:16:9-65
 activity#com.github.peaquyen.xJournal.MainActivity
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:24:9-32:20
 	android:exported
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:26:13-36
 	android:theme
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:28:13-59
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:27:13-59
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:25:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:29:13-32:29
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml:30:27-74
 uses-sdk
 INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\src\main\AndroidManifest.xml

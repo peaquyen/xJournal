@@ -6,7 +6,7 @@
 //import io.realm.kotlin.types.RealmObject
 //import org.mongodb.kbson.ObjectId
 //import java.time.Instant
-//
+//d
 //open class Journal : RealmObject(){
 //    var _id: ObjectId = ObjectId.invoke() // ObjectId is a class from Realm, create() deprecated
 //    var ownerId: String = ""
