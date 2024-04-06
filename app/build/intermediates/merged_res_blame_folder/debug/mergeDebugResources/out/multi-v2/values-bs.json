@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-63:/values-bs/values-bs.xml",
+            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-2:/values-bs/values-bs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\3af84895761326afc6f7fe4f326d7d52\\transformed\\ui-release\\res\\values-bs\\values-bs.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,206,294,388,487,573,650,742,834,919,1000,1086,1159,1238,1315,1395,1465",
-                        "endColumns": "100,87,93,98,85,76,91,91,84,80,85,72,78,76,79,69,117",
-                        "endOffsets": "201,289,383,482,568,645,737,829,914,995,1081,1154,1233,1310,1390,1460,1578"
-                    },
-                    "to": {
-                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "830,931,1019,1113,1212,1298,1375,7682,7774,7859,7940,8026,8099,8178,8356,8436,8506",
-                        "endColumns": "100,87,93,98,85,76,91,91,84,80,85,72,78,76,79,69,117",
-                        "endOffsets": "926,1014,1108,1207,1293,1370,1462,7769,7854,7935,8021,8094,8173,8250,8431,8501,8619"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\81ee3f81eda9e4eac3b4d91833adcec6\\transformed\\foundation-release\\res\\values-bs\\values-bs.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\81ee3f81eda9e4eac3b4d91833adcec6\\transformed\\foundation-release\\res\\values-bs\\values-bs.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\80b4e374623a426a66391b57762c6e92\\transformed\\core-1.12.0\\res\\values-bs\\values-bs.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\80b4e374623a426a66391b57762c6e92\\transformed\\core-1.12.0\\res\\values-bs\\values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,7 +38,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\f433afe9a60c50c35c80bd745bc34903\\transformed\\material3-release\\res\\values-bs\\values-bs.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\3af84895761326afc6f7fe4f326d7d52\\transformed\\ui-release\\res\\values-bs\\values-bs.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,206,294,388,487,573,650,742,834,919,1000,1086,1159,1238,1315,1395,1465",
+                        "endColumns": "100,87,93,98,85,76,91,91,84,80,85,72,78,76,79,69,117",
+                        "endOffsets": "201,289,383,482,568,645,737,829,914,995,1081,1154,1233,1310,1390,1460,1578"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "830,931,1019,1113,1212,1298,1375,7682,7774,7859,7940,8026,8099,8178,8356,8436,8506",
+                        "endColumns": "100,87,93,98,85,76,91,91,84,80,85,72,78,76,79,69,117",
+                        "endOffsets": "926,1014,1108,1207,1293,1370,1462,7769,7854,7935,8021,8094,8173,8250,8431,8501,8619"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\f433afe9a60c50c35c80bd745bc34903\\transformed\\material3-release\\res\\values-bs\\values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

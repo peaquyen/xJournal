@@ -1,8 +1,25 @@
 R_DEF: Internal format may change without notice
 local
+drawable angry
+drawable awful
+drawable bored
+drawable calm
+drawable depressed
+drawable disappointed
+drawable google_logo
+drawable happy
+drawable humorous
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable journal
+drawable logo
+drawable lonely
+drawable mysterious
+drawable neutral
+drawable romantic
+drawable shameful
+drawable surprised
+drawable suspicious
+drawable tense
 mipmap ic_launcher
 mipmap ic_launcher_round
 style Theme.xJournal

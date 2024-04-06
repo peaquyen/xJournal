@@ -59,11 +59,11 @@ android {
     // compatibility for Java and Kotlin respectively.
     // e.g: ìf jvmTarget != 1.8, it will cause error when building the project
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "18"
     }
 
     // The buildFeatures block enables or disables specific features of the Android

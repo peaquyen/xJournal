@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-63:/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-mergeDebugResources-2:\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\Documents\\KMA\\Android\\xJournal\\app\\src\\main\\res\\values-night\\splash.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\71cc39fe68a4d8b432474fb8585f7756\\transformed\\core-splashscreen-1.0.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "85",
+                        "endOffsets": "136"
+                    }
+                },
+                {
+                    "source": "A:\\AndroidAlternativeProjects\\xJournal\\app\\src\\main\\res\\values-night\\splash.xml",
                     "from": {
                         "startLines": "3",
                         "startColumns": "4",
@@ -21,15 +31,44 @@
                         "endColumns": "12",
                         "endOffsets": "434"
                     }
-                },
+                }
+            ]
+        },
+        {
+            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "map": [
                 {
-                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\71cc39fe68a4d8b432474fb8585f7756\\transformed\\core-splashscreen-1.0.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\71cc39fe68a4d8b432474fb8585f7756\\transformed\\core-splashscreen-1.0.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "85",
                         "endOffsets": "136"
+                    }
+                },
+                {
+                    "source": "A:\\AndroidAlternativeProjects\\xJournal\\app\\src\\main\\res\\values-night\\splash.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "353"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "141",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "431"
                     }
                 }
             ]

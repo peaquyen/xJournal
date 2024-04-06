@@ -3,7 +3,7 @@
     <style name="Theme.xJournal" parent="android:Theme.Material.Light.NoActionBar"/>
     <style name="Theme.xJournal.MySplash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#FFFBFF</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/journal</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
         <item name="postSplashScreenTheme">@style/Theme.xJournal</item>
         
     </style>
