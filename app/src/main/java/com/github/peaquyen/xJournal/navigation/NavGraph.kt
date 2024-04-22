@@ -16,6 +16,7 @@ import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 @Composable
 fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
     NavHost(startDestination = startDestination ,navController = navController) {
+        // define all the screen that our app will have. Each would contain composable function
         authenticationRouter()
         homeRouter()
         writeRouter()
@@ -23,8 +24,8 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
 }
 
 fun NavGraphBuilder.authenticationRouter() {
-    composable(route = Screen.Authentication.route) {
-
+    composable(route = Screen/*class*/.Authentication/*object*/.route) {
+        //define the actual screen
     }
 }
 

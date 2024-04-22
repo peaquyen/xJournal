@@ -1,11 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/xml_backup_rules.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_depressed.xml.flat",
@@ -16,28 +20,16 @@
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/happy.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\drawable_journal.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\drawable\\journal.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_ic_launcher_background.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\drawable_logo.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\drawable\\logo.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_calm.xml.flat",
@@ -48,6 +40,10 @@
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/awful.xml"
     },
     {
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_logo.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/logo.xml"
     },
@@ -56,44 +52,36 @@
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/humorous.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\xml\\data_extraction_rules.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_bored.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/bored.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_lonely.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/lonely.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_suspicious.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/suspicious.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_disappointed.xml.flat",
@@ -108,16 +96,20 @@
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/neutral.xml"
     },
     {
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_mysterious.xml.flat",
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/mysterious.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_romantic.xml.flat",
@@ -132,12 +124,8 @@
         "source": "com.github.peaquyen.xJournal.app-main-6:/drawable/surprised.xml"
     },
     {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Pea Quyen\\.gradle\\daemon\\8.7\\com.github.peaquyen.xJournal.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-4:/xml_data_extraction_rules.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-6:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "com.github.peaquyen.xJournal.app-debug-4:/drawable_angry.xml.flat",

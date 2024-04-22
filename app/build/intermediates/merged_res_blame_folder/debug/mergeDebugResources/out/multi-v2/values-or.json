@@ -4,7 +4,7 @@
             "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-2:/values-or/values-or.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\f433afe9a60c50c35c80bd745bc34903\\transformed\\material3-release\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\b26b85672af2fcb235610c19ccae90e5\\transformed\\material3-release\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\3af84895761326afc6f7fe4f326d7d52\\transformed\\ui-release\\res\\values-or\\values-or.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,202,289,381,481,567,644,742,830,917,995,1077,1147,1224,1300,1383,1450",
-                        "endColumns": "96,86,91,99,85,76,97,87,86,77,81,69,76,75,82,66,118",
-                        "endOffsets": "197,284,376,476,562,639,737,825,912,990,1072,1142,1219,1295,1378,1445,1564"
-                    },
-                    "to": {
-                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "840,937,1024,1116,1216,1302,1379,7728,7816,7903,7981,8063,8133,8210,8387,8470,8537",
-                        "endColumns": "96,86,91,99,85,76,97,87,86,77,81,69,76,75,82,66,118",
-                        "endOffsets": "932,1019,1111,1211,1297,1374,1472,7811,7898,7976,8058,8128,8205,8281,8465,8532,8651"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\80b4e374623a426a66391b57762c6e92\\transformed\\core-1.12.0\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\8909b8ec6e5da9174fbd4311b872ce5f\\transformed\\core-1.12.0\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\81ee3f81eda9e4eac3b4d91833adcec6\\transformed\\foundation-release\\res\\values-or\\values-or.xml",
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\7136c66630d0c4371c719350bfc2773d\\transformed\\foundation-release\\res\\values-or\\values-or.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "8656,8741",
                         "endColumns": "84,87",
                         "endOffsets": "8736,8824"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,202,289,381,481,567,644,742,830,917,995,1077,1147,1224,1300,1383,1450",
+                        "endColumns": "96,86,91,99,85,76,97,87,86,77,81,69,76,75,82,66,118",
+                        "endOffsets": "197,284,376,476,562,639,737,825,912,990,1072,1142,1219,1295,1378,1445,1564"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,72,73,74,75,76,77,78,80,81,82",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "840,937,1024,1116,1216,1302,1379,7728,7816,7903,7981,8063,8133,8210,8387,8470,8537",
+                        "endColumns": "96,86,91,99,85,76,97,87,86,77,81,69,76,75,82,66,118",
+                        "endOffsets": "932,1019,1111,1211,1297,1374,1472,7811,7898,7976,8058,8128,8205,8281,8465,8532,8651"
                     }
                 }
             ]

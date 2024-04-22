@@ -5,5 +5,5 @@ object Constants {
     const val CLIENT_ID = "1072580289803-lbm7c1dklcnqtuk8m507gbap6p87nd18.apps.googleusercontent.com"
     const val CLIENT_SECRET = "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"
 
-    const val WRITE_SCREEN_ARGUMENT_KEY = "xJournalId"
+    const val WRITE_SCREEN_ARGUMENT_KEY = "journalId"
 }
