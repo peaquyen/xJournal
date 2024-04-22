@@ -22,6 +22,9 @@ drawable suspicious
 drawable tense
 mipmap ic_launcher
 mipmap ic_launcher_round
+string app_name
+string auth_subtitle
+string auth_title
 style Theme.xJournal
 style Theme.xJournal.MySplash
 xml backup_rules

@@ -9,7 +9,10 @@ import androidx.compose.runtime.Composable
 fun AuthenticationScreen() {
     Scaffold(
         content = {
-            AuthenticationContent()
+            AuthenticationContent(
+                loadingState = false,
+                onButtonClicked = {}
+            )
         }
     )
 }

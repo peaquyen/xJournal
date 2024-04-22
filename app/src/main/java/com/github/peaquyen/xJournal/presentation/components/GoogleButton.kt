@@ -20,7 +20,6 @@ import com.github.peaquyen.xJournal.R
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 
-@Preview
 @Composable
 fun GoogleButton(
     modifier: Modifier = Modifier,
