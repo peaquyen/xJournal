@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-63:/values-sw/values-sw.xml",
+            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-64:/values-sw/values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-sw\\values-sw.xml",

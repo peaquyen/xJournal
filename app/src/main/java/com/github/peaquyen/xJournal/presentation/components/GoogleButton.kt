@@ -1,4 +1,3 @@
-import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
@@ -32,14 +31,14 @@ fun GoogleButton(
     backgroundColor: Color = MaterialTheme.colorScheme.surface,
     borderStrokeWidth: Dp = 1.dp,
     progressIndicatorColor: Color = MaterialTheme.colorScheme.primary,
-    onClick: () -> Unit // override fun toString() = "kotlin.Unit"
+    onClick: () -> Unit
 ) {
     var buttonText by remember { mutableStateOf(primaryText) }
 
     LaunchedEffect(key1 = loadingState) {
         buttonText = if (loadingState) secondaryText else primaryText
     }
-    // regular composable
+
     Surface(
         // enable state
         modifier = modifier // the clickable modifier in Jetpack Compose, a UI toolkit for Android.
@@ -51,13 +50,13 @@ fun GoogleButton(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(12.dp)
-                .animateContentSize(
-                    animationSpec = tween(
-                        durationMillis = 300,
-                        easing = LinearOutSlowInEasing
-                    )
-                ),
+                .padding(12.dp),
+//                .animateContentSize(
+//                    animationSpec = tween(
+//                        durationMillis = 300,
+//                        easing = LinearOutSlowInEasing
+//                    )
+//                ),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
@@ -92,6 +91,6 @@ fun GoogleButtonPreview() {
 
 @Composable
 @Preview
-fun GoogleButtonPreview0() {
+fun GoogleButtonPreview2() {
     GoogleButton(loadingState = true) {}
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-63:/values-pt-rBR/values-pt-rBR.xml",
+            "outputFile": "com.github.peaquyen.xJournal.app-mergeDebugResources-64:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\b26b85672af2fcb235610c19ccae90e5\\transformed\\material3-release\\res\\values-pt-rBR\\values-pt-rBR.xml",

@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-1:/values-lv/values-lv.xml",
+            "outputFile": "com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-33:/values-lv/values-lv.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\8909b8ec6e5da9174fbd4311b872ce5f\\transformed\\core-1.12.0\\res\\values-lv\\values-lv.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,355,456,563,671,786",
-                        "endColumns": "97,101,99,100,106,107,114,100",
-                        "endOffsets": "148,250,350,451,558,666,781,882"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,23",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,203,305,405,506,613,721,2061",
-                        "endColumns": "97,101,99,100,106,107,114,100",
-                        "endOffsets": "198,300,400,501,608,716,831,2157"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-lv\\values-lv.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-lv\\values-lv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "836,934,1023,1119,1222,1312,1398,1486,1579,1663,1748,1835,1908,1985,2162,2240,2308",
                         "endColumns": "97,88,95,102,89,85,87,92,83,84,86,72,76,75,77,67,121",
                         "endOffsets": "929,1018,1114,1217,1307,1393,1481,1574,1658,1743,1830,1903,1980,2056,2235,2303,2425"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\8909b8ec6e5da9174fbd4311b872ce5f\\transformed\\core-1.12.0\\res\\values-lv\\values-lv.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,153,255,355,456,563,671,786",
+                        "endColumns": "97,101,99,100,106,107,114,100",
+                        "endOffsets": "148,250,350,451,558,666,781,882"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,23",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,203,305,405,506,613,721,2061",
+                        "endColumns": "97,101,99,100,106,107,114,100",
+                        "endOffsets": "198,300,400,501,608,716,831,2157"
                     }
                 }
             ]

@@ -158,6 +158,9 @@ dependencies {
     // Desugar JDK: help certain code in the app without api required
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
+
+    // To use constraintlayout in compose
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha13")
 }
 
 // The kotlin block configures the Kotlin plugin for the project.

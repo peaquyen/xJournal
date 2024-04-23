@@ -24,6 +24,7 @@ MERGED from [com.google.accompanist:accompanist-pager:0.35.0-alpha] C:\Users\ADM
 MERGED from [io.coil-kt:coil-compose:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\334972a2bf45f333742888f04b9e8ff5\transformed\coil-compose-2.6.0\AndroidManifest.xml:2:1-7:12
 MERGED from [io.coil-kt:coil-compose-base:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\5415c5ab32ec261a10855ed950ec57c1\transformed\coil-compose-base-2.6.0\AndroidManifest.xml:2:1-7:12
 MERGED from [dev.chrisbanes.snapper:snapper:0.2.2] C:\Users\ADMIN\.gradle\caches\transforms-4\005c72f84e2fc7e56b4845cc1ef383b9\transformed\snapper-0.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout-compose-android:1.1.0-alpha13] C:\Users\ADMIN\.gradle\caches\transforms-4\6e7f5be9f461eb44a301379e95a204dd\transformed\constraintlayout-compose-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\117ca4ce59e42a31c455c14a2474144f\transformed\material-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\c7717331e25d0d3df9a384b979a09f9f\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\b3f64e555c51f0ecc3afc985a7abefe5\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
@@ -32,8 +33,8 @@ MERGED from [androidx.compose.animation:animation-android:1.7.0-alpha01] C:\User
 MERGED from [androidx.compose.foundation:foundation-layout-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\facb60fa761ac1c8358ba1f852b29333\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\7136c66630d0c4371c719350bfc2773d\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\1723a91fd0e215b0129cb3aaebd4323e\transformed\ui-tooling-data-release\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\8580effa2a5c90f065b671ed56964833\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\33e7748fdbd706568d70998e4b1a7e1c\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\04ced6eee8e48b6455c532b840924630\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:17:1-28:12
@@ -209,6 +210,8 @@ MERGED from [io.coil-kt:coil-compose-base:2.6.0] C:\Users\ADMIN\.gradle\caches\t
 MERGED from [io.coil-kt:coil-compose-base:2.6.0] C:\Users\ADMIN\.gradle\caches\transforms-4\5415c5ab32ec261a10855ed950ec57c1\transformed\coil-compose-base-2.6.0\AndroidManifest.xml:5:5-44
 MERGED from [dev.chrisbanes.snapper:snapper:0.2.2] C:\Users\ADMIN\.gradle\caches\transforms-4\005c72f84e2fc7e56b4845cc1ef383b9\transformed\snapper-0.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [dev.chrisbanes.snapper:snapper:0.2.2] C:\Users\ADMIN\.gradle\caches\transforms-4\005c72f84e2fc7e56b4845cc1ef383b9\transformed\snapper-0.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout-compose-android:1.1.0-alpha13] C:\Users\ADMIN\.gradle\caches\transforms-4\6e7f5be9f461eb44a301379e95a204dd\transformed\constraintlayout-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout-compose-android:1.1.0-alpha13] C:\Users\ADMIN\.gradle\caches\transforms-4\6e7f5be9f461eb44a301379e95a204dd\transformed\constraintlayout-compose-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\117ca4ce59e42a31c455c14a2474144f\transformed\material-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\117ca4ce59e42a31c455c14a2474144f\transformed\material-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.0-alpha07] C:\Users\ADMIN\.gradle\caches\transforms-4\c7717331e25d0d3df9a384b979a09f9f\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
@@ -225,10 +228,10 @@ MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha01] C:\Us
 MERGED from [androidx.compose.foundation:foundation-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\7136c66630d0c4371c719350bfc2773d\transformed\foundation-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\1723a91fd0e215b0129cb3aaebd4323e\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-data-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\1723a91fd0e215b0129cb3aaebd4323e\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\8580effa2a5c90f065b671ed56964833\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\8580effa2a5c90f065b671ed56964833\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\33e7748fdbd706568d70998e4b1a7e1c\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-graphics-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\33e7748fdbd706568d70998e4b1a7e1c\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.ui:ui-geometry-android:1.7.0-alpha01] C:\Users\ADMIN\.gradle\caches\transforms-4\04ced6eee8e48b6455c532b840924630\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
