@@ -10,6 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
+import com.stevdzasan.messagebar.rememberMessageBarState
 import com.stevdzasan.onetap.OneTapSignInState
 import com.stevdzasan.onetap.rememberOneTapSignInState
 
@@ -28,21 +29,39 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
-fun NavGraphBuilder.authenticationRouter(
-) {
+fun NavGraphBuilder.authenticationRouter() {
     composable(route = Screen.Authentication.route) {
-        val oneTapState = rememberOneTapSignInState().also {
-            AuthenticationScreen(
-                loadingState = it.opened,
-                oneTapState = it,
-                onButtonClicked = {
-                    it.open()
-                }
-            )
-        }
+        val oneTapState = rememberOneTapSignInState()
+        //val messageBarState = rememberMessageBarState()
+        val messageBarState: () -> Unit = { rememberMessageBarState() }
+        AuthenticationScreen(
+            loadingState = oneTapState.opened,
+            oneTapState = oneTapState,
+            messageBarState = messageBarState,
+            onButtonClicked = {
+                oneTapState.open()
+            }
+        )
     }
 }
 
+// Quick fix for messageBarState
+//@OptIn(ExperimentalMaterial3Api::class)
+//fun NavGraphBuilder.authenticationRouter() {
+//    composable(route = Screen.Authentication.route) {
+//        val oneTapState = rememberOneTapSignInState()
+//        val messageBarState = rememberMessageBarState()
+//        val messageBarStateFunction: () -> Unit = { /* Use messageBarState here */ }
+//        AuthenticationScreen(
+//            loadingState = oneTapState.opened,
+//            oneTapState = oneTapState,
+//            messageBarState = messageBarStateFunction,
+//            onButtonClicked = {
+//                oneTapState.open()
+//            }
+//        )
+//    }
+//}
 fun NavGraphBuilder.homeRouter() {
     composable(route = Screen.Home.route) {
 
