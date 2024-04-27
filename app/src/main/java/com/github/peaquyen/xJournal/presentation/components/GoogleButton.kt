@@ -1,3 +1,4 @@
+import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
@@ -50,13 +51,13 @@ fun GoogleButton(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(12.dp),
-//                .animateContentSize(
-//                    animationSpec = tween(
-//                        durationMillis = 300,
-//                        easing = LinearOutSlowInEasing
-//                    )
-//                ),
+                .padding(12.dp)
+                .animateContentSize(
+                    animationSpec = tween(
+                        durationMillis = 300,
+                        easing = LinearOutSlowInEasing
+                    )
+                ),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {

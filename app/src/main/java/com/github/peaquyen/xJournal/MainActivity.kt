@@ -10,8 +10,11 @@ import com.github.peaquyen.xJournal.navigation.SetUpNavGraph
 import com.github.peaquyen.xJournal.ui.theme.xJournalTheme
 
 class MainActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         installSplashScreen()
         setContent {
             xJournalTheme {
