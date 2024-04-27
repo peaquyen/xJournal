@@ -72,6 +72,7 @@ fun GoogleButton(
             )
             if (loadingState) {
                 Spacer(modifier = Modifier.width(16.dp))
+                //@Composable
                 CircularProgressIndicator(
                     modifier = Modifier
                         .size(16.dp),
@@ -92,5 +93,5 @@ fun GoogleButtonPreview() {
 @Composable
 @Preview
 fun GoogleButtonPreview2() {
-    GoogleButton(loadingState = true) {}
+    GoogleButton(loadingState = false) {}
 }

@@ -10,6 +10,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
+import com.stevdzasan.onetap.OneTapSignInState
+import com.stevdzasan.onetap.rememberOneTapSignInState
 
 // draw the navigation graph
 // startDestination: the first screen to show
@@ -29,7 +31,15 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
 fun NavGraphBuilder.authenticationRouter(
 ) {
     composable(route = Screen.Authentication.route) {
-        AuthenticationScreen()
+        val oneTapState = rememberOneTapSignInState().also {
+            AuthenticationScreen(
+                loadingState = it.opened,
+                oneTapState = it,
+                onButtonClicked = {
+                    it.open()
+                }
+            )
+        }
     }
 }
 

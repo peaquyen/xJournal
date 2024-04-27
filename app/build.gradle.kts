@@ -105,19 +105,19 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
     // ROOM components
-    val room_version = "2.6.0"
+    val room_version = "2.6.1"
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room_version")
 
     // Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
 
     // Runtime Compose
-    implementation("androidx.compose.runtime:runtime:1.3.3")
-    implementation("androidx.compose.runtime:runtime-livedata:1.3.3")
-    implementation("androidx.compose.runtime:runtime-rxjava2:1.3.3")
+    implementation("androidx.compose.runtime:runtime:1.6.6")
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.6")
+    implementation("androidx.compose.runtime:runtime-rxjava2:1.6.6")
 
     // Splash API
     implementation("androidx.core:core-splashscreen:1.0.1")
@@ -128,11 +128,11 @@ dependencies {
             strictly("1.7.1")
         }
     }
-    implementation("io.realm.kotlin:library-sync:1.14.1")
+    implementation("io.realm.kotlin:library-sync:1.15.0")
 
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Google Auth
@@ -153,7 +153,7 @@ dependencies {
 
     // One-Tap Compose: easily integrate One-Tap Sign in with Google
     // -> oh no
-    //implementation("com.github.stevdza-san.OneTapCompose:1.0.11")
+    implementation("com.github.stevdza-san:OneTapCompose:1.0.12")
 
     // Desugar JDK: help certain code in the app without api required
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
