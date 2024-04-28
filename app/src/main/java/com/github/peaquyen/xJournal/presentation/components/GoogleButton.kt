@@ -74,12 +74,12 @@ fun GoogleButton(
             if (loadingState) {
                 Spacer(modifier = Modifier.width(16.dp))
                 //@Composable
-                CircularProgressIndicator(
-                    modifier = Modifier
-                        .size(16.dp),
-                    strokeWidth = 2.dp,
-                    color = progressIndicatorColor
-                )
+//                CircularProgressIndicator(
+//                    modifier = Modifier
+//                        .size(16.dp),
+//                    strokeWidth = 2.dp,
+//                    color = progressIndicatorColor
+//                )
             }
         }
     }
