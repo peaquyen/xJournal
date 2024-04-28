@@ -2,24 +2,8 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="GoogleButtonPreview2">
-        <State />
-      </entry>
       <entry key="xJournal">
-        <State>
-          <targetSelectedWithDropDown>
-            <Target>
-              <type value="QUICK_BOOT_TARGET" />
-              <deviceKey>
-                <Key>
-                  <type value="VIRTUAL_DEVICE_PATH" />
-                  <value value="C:\Users\ADMIN\.android\avd\Pixel_API_31.avd" />
-                </Key>
-              </deviceKey>
-            </Target>
-          </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-27T08:35:12.882802Z" />
-        </State>
+        <State />
       </entry>
     </value>
   </component>

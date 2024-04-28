@@ -21,7 +21,7 @@ fun AuthenticationScreen(
     messageBarState: MessageBarState,
     onButtonClicked: () -> Unit,
     onTokenIdReceived: (String) -> Unit,
-    onDialogReceived: (String) -> Unit
+    onDialogDismissed: (String) -> Unit
 ) {
     Scaffold(
         content = {
@@ -42,7 +42,7 @@ fun AuthenticationScreen(
         },
         onDialogDismissed = { message ->
             Log.d("Auth", message)
-            onDialogReceived(message)
+            onDialogDismissed(message)
             messageBarState.addError(Exception(message))
         }
     )

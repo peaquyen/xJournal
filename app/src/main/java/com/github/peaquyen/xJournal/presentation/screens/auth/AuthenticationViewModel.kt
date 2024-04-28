@@ -28,6 +28,7 @@ class AuthenticationViewModel: ViewModel() {
         onError: (Exception) -> Unit
     ) {
         viewModelScope.launch {
+
         // When you launch a coroutine within a specific CoroutineScope,
         // you're tying the lifecycle of that coroutine to the lifecycle
         // of that scope. If the scope gets cancelled, all coroutines
