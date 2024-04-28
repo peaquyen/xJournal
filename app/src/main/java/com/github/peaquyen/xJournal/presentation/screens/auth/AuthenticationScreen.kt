@@ -18,18 +18,17 @@ import java.lang.Exception
 fun AuthenticationScreen(
     loadingState: Boolean,
     oneTapState: OneTapSignInState,
-    onButtonClicked: () -> Unit, //takes no parameters and returns no result
     messageBarState: MessageBarState,
-    onTokenIdReceived: (String /*tokenID*/) -> Unit,
-    onDialogDismissed: (String) -> Unit
+    onButtonClicked: () -> Unit,
+    onTokenIdReceived: (String) -> Unit,
+    onDialogReceived: (String) -> Unit
 ) {
     Scaffold(
         content = {
-
             ContentWithMessageBar(messageBarState = messageBarState) {
                 AuthenticationContent(
-                    loadingState = false,
-                    onButtonClicked = {}
+                    loadingState = loadingState,
+                    onButtonClicked = onButtonClicked
                 )
             }
         }
@@ -39,16 +38,12 @@ fun AuthenticationScreen(
         clientId = CLIENT_ID,
         onTokenIdReceived = { tokenId ->
             Log.d("Auth", tokenId)
-                onTokenIdReceived(tokenId)
-//            messageBarState.addSuccess("Successfully Authenticate!")
+            onTokenIdReceived(tokenId)
         },
         onDialogDismissed = { message ->
             Log.d("Auth", message)
-            onDialogDismissed(message)
+            onDialogReceived(message)
             messageBarState.addError(Exception(message))
         }
     )
 }
-
-//This code is a good example of how Jetpack Compose can be used to create a clean and
-// understandable UI structure
