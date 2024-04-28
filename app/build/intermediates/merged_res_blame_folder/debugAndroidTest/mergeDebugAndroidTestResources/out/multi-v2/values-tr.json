@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-1:/values-tr/values-tr.xml",
+            "outputFile": "com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-33:/values-tr/values-tr.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\8909b8ec6e5da9174fbd4311b872ce5f\\transformed\\core-1.12.0\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\8909b8ec6e5da9174fbd4311b872ce5f\\transformed\\core-1.12.0\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Pea Quyen\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-tr\\values-tr.xml",
+                    "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-4\\267a00e0d55bfccf8ac58f94ab0ac99e\\transformed\\ui-release\\res\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

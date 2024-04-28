@@ -1,36 +1,36 @@
-com.github.peaquyen.xJournal.test.app-androidTest-0 A:\AndroidAlternativeProjects\xJournal\app\build\generated\res\resValues\androidTest\debug
-com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-1 A:\AndroidAlternativeProjects\xJournal\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-2 A:\AndroidAlternativeProjects\xJournal\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.github.peaquyen.xJournal.test.app-debugAndroidTest-3 A:\AndroidAlternativeProjects\xJournal\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
-com.github.peaquyen.xJournal.test.app-ui-geometry-release-4 C:\Users\Pea Quyen\.gradle\caches\transforms-4\04ced6eee8e48b6455c532b840924630\transformed\ui-geometry-release\res
-com.github.peaquyen.xJournal.test.app-lifecycle-runtime-2.7.0-5 C:\Users\Pea Quyen\.gradle\caches\transforms-4\06edc02823207b7cc6c48ecc88aa664f\transformed\lifecycle-runtime-2.7.0\res
-com.github.peaquyen.xJournal.test.app-activity-1.8.2-6 C:\Users\Pea Quyen\.gradle\caches\transforms-4\1afb2660e7895394cf070706a4eaccb9\transformed\activity-1.8.2\res
-com.github.peaquyen.xJournal.test.app-ui-util-release-7 C:\Users\Pea Quyen\.gradle\caches\transforms-4\1c314c1e3b54251dda0987a8ac54fa40\transformed\ui-util-release\res
-com.github.peaquyen.xJournal.test.app-ui-release-8 C:\Users\Pea Quyen\.gradle\caches\transforms-4\267a00e0d55bfccf8ac58f94ab0ac99e\transformed\ui-release\res
-com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-ktx-2.7.0-9 C:\Users\Pea Quyen\.gradle\caches\transforms-4\28f30c02cb817acfb1d523dd643dd6c9\transformed\lifecycle-viewmodel-ktx-2.7.0\res
-com.github.peaquyen.xJournal.test.app-core-ktx-1.12.0-10 C:\Users\Pea Quyen\.gradle\caches\transforms-4\2fef5aee97c932a30e81c9d7ac52f258\transformed\core-ktx-1.12.0\res
-com.github.peaquyen.xJournal.test.app-ui-graphics-release-11 C:\Users\Pea Quyen\.gradle\caches\transforms-4\33e7748fdbd706568d70998e4b1a7e1c\transformed\ui-graphics-release\res
-com.github.peaquyen.xJournal.test.app-lifecycle-livedata-core-2.7.0-12 C:\Users\Pea Quyen\.gradle\caches\transforms-4\3481e39b912891ee8700a2825ccd8c2f\transformed\lifecycle-livedata-core-2.7.0\res
-com.github.peaquyen.xJournal.test.app-ui-test-junit4-release-13 C:\Users\Pea Quyen\.gradle\caches\transforms-4\41e4ee98a7fde39a3416d43e88982277\transformed\ui-test-junit4-release\res
-com.github.peaquyen.xJournal.test.app-customview-poolingcontainer-1.0.0-14 C:\Users\Pea Quyen\.gradle\caches\transforms-4\48e3aa66d3ecc786fb029cc83cec44f1\transformed\customview-poolingcontainer-1.0.0\res
-com.github.peaquyen.xJournal.test.app-ui-unit-release-15 C:\Users\Pea Quyen\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\res
-com.github.peaquyen.xJournal.test.app-runtime-release-16 C:\Users\Pea Quyen\.gradle\caches\transforms-4\5c33241d3d00466121925e8ea0879475\transformed\runtime-release\res
-com.github.peaquyen.xJournal.test.app-runtime-saveable-release-17 C:\Users\Pea Quyen\.gradle\caches\transforms-4\6747b6d98bbb7c612ab073010012ce6b\transformed\runtime-saveable-release\res
-com.github.peaquyen.xJournal.test.app-startup-runtime-1.1.1-18 C:\Users\Pea Quyen\.gradle\caches\transforms-4\6b80de6a3dce3ffd7536e894e6a61978\transformed\startup-runtime-1.1.1\res
-com.github.peaquyen.xJournal.test.app-core-1.12.0-19 C:\Users\Pea Quyen\.gradle\caches\transforms-4\8909b8ec6e5da9174fbd4311b872ce5f\transformed\core-1.12.0\res
-com.github.peaquyen.xJournal.test.app-core-1.5.0-20 C:\Users\Pea Quyen\.gradle\caches\transforms-4\93da2bc0426bf3beec8b9acfe8b36e6d\transformed\core-1.5.0\res
-com.github.peaquyen.xJournal.test.app-annotation-experimental-1.4.0-21 C:\Users\Pea Quyen\.gradle\caches\transforms-4\946d578e1edf37398472c21c6a0c5f9b\transformed\annotation-experimental-1.4.0\res
-com.github.peaquyen.xJournal.test.app-savedstate-ktx-1.2.1-22 C:\Users\Pea Quyen\.gradle\caches\transforms-4\9a2ade87adc41aa86101aa0f2ef95ce3\transformed\savedstate-ktx-1.2.1\res
-com.github.peaquyen.xJournal.test.app-graphics-path-1.0.0-beta02-23 C:\Users\Pea Quyen\.gradle\caches\transforms-4\bbbaac6af16e75e904bec286d0965a29\transformed\graphics-path-1.0.0-beta02\res
-com.github.peaquyen.xJournal.test.app-ui-test-release-24 C:\Users\Pea Quyen\.gradle\caches\transforms-4\bbde9e7df380e0d0de91a3d2523b171b\transformed\ui-test-release\res
-com.github.peaquyen.xJournal.test.app-emoji2-1.3.0-25 C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\res
-com.github.peaquyen.xJournal.test.app-lifecycle-process-2.7.0-26 C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\res
-com.github.peaquyen.xJournal.test.app-activity-compose-1.8.2-27 C:\Users\Pea Quyen\.gradle\caches\transforms-4\e8d78be6a4f0f848d26feb1dbd872592\transformed\activity-compose-1.8.2\res
-com.github.peaquyen.xJournal.test.app-savedstate-1.2.1-28 C:\Users\Pea Quyen\.gradle\caches\transforms-4\ec0dfcb9764c066083e6a5b421e84adf\transformed\savedstate-1.2.1\res
-com.github.peaquyen.xJournal.test.app-lifecycle-runtime-ktx-2.7.0-29 C:\Users\Pea Quyen\.gradle\caches\transforms-4\ed2cfa054141d6b61654b6a3d6b6796a\transformed\lifecycle-runtime-ktx-2.7.0\res
-com.github.peaquyen.xJournal.test.app-profileinstaller-1.3.1-30 C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\res
-com.github.peaquyen.xJournal.test.app-core-runtime-2.2.0-31 C:\Users\Pea Quyen\.gradle\caches\transforms-4\f75647df197807dd59368f55e1b7222d\transformed\core-runtime-2.2.0\res
-com.github.peaquyen.xJournal.test.app-ui-text-release-32 C:\Users\Pea Quyen\.gradle\caches\transforms-4\f8f9e734e7ae010370917ab5ffb53a76\transformed\ui-text-release\res
-com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-2.7.0-33 C:\Users\Pea Quyen\.gradle\caches\transforms-4\f9d87813776e0f05fa4d33dd9cde85ae\transformed\lifecycle-viewmodel-2.7.0\res
-com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-savedstate-2.7.0-34 C:\Users\Pea Quyen\.gradle\caches\transforms-4\fc719a6e5ef89f0c6f387e2611876323\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
-com.github.peaquyen.xJournal.test.app-activity-ktx-1.8.2-35 C:\Users\Pea Quyen\.gradle\caches\transforms-4\fe74059334e7ef94200ed51775e49d1d\transformed\activity-ktx-1.8.2\res
+com.github.peaquyen.xJournal.test.app-ui-geometry-release-0 C:\Users\ADMIN\.gradle\caches\transforms-4\04ced6eee8e48b6455c532b840924630\transformed\ui-geometry-release\res
+com.github.peaquyen.xJournal.test.app-lifecycle-runtime-2.7.0-1 C:\Users\ADMIN\.gradle\caches\transforms-4\06edc02823207b7cc6c48ecc88aa664f\transformed\lifecycle-runtime-2.7.0\res
+com.github.peaquyen.xJournal.test.app-activity-1.8.2-2 C:\Users\ADMIN\.gradle\caches\transforms-4\1afb2660e7895394cf070706a4eaccb9\transformed\activity-1.8.2\res
+com.github.peaquyen.xJournal.test.app-ui-util-release-3 C:\Users\ADMIN\.gradle\caches\transforms-4\1c314c1e3b54251dda0987a8ac54fa40\transformed\ui-util-release\res
+com.github.peaquyen.xJournal.test.app-ui-release-4 C:\Users\ADMIN\.gradle\caches\transforms-4\267a00e0d55bfccf8ac58f94ab0ac99e\transformed\ui-release\res
+com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-ktx-2.7.0-5 C:\Users\ADMIN\.gradle\caches\transforms-4\28f30c02cb817acfb1d523dd643dd6c9\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.github.peaquyen.xJournal.test.app-core-ktx-1.12.0-6 C:\Users\ADMIN\.gradle\caches\transforms-4\2fef5aee97c932a30e81c9d7ac52f258\transformed\core-ktx-1.12.0\res
+com.github.peaquyen.xJournal.test.app-ui-graphics-release-7 C:\Users\ADMIN\.gradle\caches\transforms-4\33e7748fdbd706568d70998e4b1a7e1c\transformed\ui-graphics-release\res
+com.github.peaquyen.xJournal.test.app-lifecycle-livedata-core-2.7.0-8 C:\Users\ADMIN\.gradle\caches\transforms-4\3481e39b912891ee8700a2825ccd8c2f\transformed\lifecycle-livedata-core-2.7.0\res
+com.github.peaquyen.xJournal.test.app-ui-test-junit4-release-9 C:\Users\ADMIN\.gradle\caches\transforms-4\41e4ee98a7fde39a3416d43e88982277\transformed\ui-test-junit4-release\res
+com.github.peaquyen.xJournal.test.app-customview-poolingcontainer-1.0.0-10 C:\Users\ADMIN\.gradle\caches\transforms-4\48e3aa66d3ecc786fb029cc83cec44f1\transformed\customview-poolingcontainer-1.0.0\res
+com.github.peaquyen.xJournal.test.app-ui-unit-release-11 C:\Users\ADMIN\.gradle\caches\transforms-4\52e415b3b96a58a5058b8f782482aa1f\transformed\ui-unit-release\res
+com.github.peaquyen.xJournal.test.app-runtime-release-12 C:\Users\ADMIN\.gradle\caches\transforms-4\5c33241d3d00466121925e8ea0879475\transformed\runtime-release\res
+com.github.peaquyen.xJournal.test.app-runtime-saveable-release-13 C:\Users\ADMIN\.gradle\caches\transforms-4\6747b6d98bbb7c612ab073010012ce6b\transformed\runtime-saveable-release\res
+com.github.peaquyen.xJournal.test.app-startup-runtime-1.1.1-14 C:\Users\ADMIN\.gradle\caches\transforms-4\6b80de6a3dce3ffd7536e894e6a61978\transformed\startup-runtime-1.1.1\res
+com.github.peaquyen.xJournal.test.app-core-1.12.0-15 C:\Users\ADMIN\.gradle\caches\transforms-4\8909b8ec6e5da9174fbd4311b872ce5f\transformed\core-1.12.0\res
+com.github.peaquyen.xJournal.test.app-core-1.5.0-16 C:\Users\ADMIN\.gradle\caches\transforms-4\93da2bc0426bf3beec8b9acfe8b36e6d\transformed\core-1.5.0\res
+com.github.peaquyen.xJournal.test.app-annotation-experimental-1.4.0-17 C:\Users\ADMIN\.gradle\caches\transforms-4\946d578e1edf37398472c21c6a0c5f9b\transformed\annotation-experimental-1.4.0\res
+com.github.peaquyen.xJournal.test.app-savedstate-ktx-1.2.1-18 C:\Users\ADMIN\.gradle\caches\transforms-4\9a2ade87adc41aa86101aa0f2ef95ce3\transformed\savedstate-ktx-1.2.1\res
+com.github.peaquyen.xJournal.test.app-graphics-path-1.0.0-beta02-19 C:\Users\ADMIN\.gradle\caches\transforms-4\bbbaac6af16e75e904bec286d0965a29\transformed\graphics-path-1.0.0-beta02\res
+com.github.peaquyen.xJournal.test.app-ui-test-release-20 C:\Users\ADMIN\.gradle\caches\transforms-4\bbde9e7df380e0d0de91a3d2523b171b\transformed\ui-test-release\res
+com.github.peaquyen.xJournal.test.app-emoji2-1.3.0-21 C:\Users\ADMIN\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\res
+com.github.peaquyen.xJournal.test.app-lifecycle-process-2.7.0-22 C:\Users\ADMIN\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\res
+com.github.peaquyen.xJournal.test.app-activity-compose-1.8.2-23 C:\Users\ADMIN\.gradle\caches\transforms-4\e8d78be6a4f0f848d26feb1dbd872592\transformed\activity-compose-1.8.2\res
+com.github.peaquyen.xJournal.test.app-savedstate-1.2.1-24 C:\Users\ADMIN\.gradle\caches\transforms-4\ec0dfcb9764c066083e6a5b421e84adf\transformed\savedstate-1.2.1\res
+com.github.peaquyen.xJournal.test.app-lifecycle-runtime-ktx-2.7.0-25 C:\Users\ADMIN\.gradle\caches\transforms-4\ed2cfa054141d6b61654b6a3d6b6796a\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.github.peaquyen.xJournal.test.app-profileinstaller-1.3.1-26 C:\Users\ADMIN\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\res
+com.github.peaquyen.xJournal.test.app-core-runtime-2.2.0-27 C:\Users\ADMIN\.gradle\caches\transforms-4\f75647df197807dd59368f55e1b7222d\transformed\core-runtime-2.2.0\res
+com.github.peaquyen.xJournal.test.app-ui-text-release-28 C:\Users\ADMIN\.gradle\caches\transforms-4\f8f9e734e7ae010370917ab5ffb53a76\transformed\ui-text-release\res
+com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-2.7.0-29 C:\Users\ADMIN\.gradle\caches\transforms-4\f9d87813776e0f05fa4d33dd9cde85ae\transformed\lifecycle-viewmodel-2.7.0\res
+com.github.peaquyen.xJournal.test.app-lifecycle-viewmodel-savedstate-2.7.0-30 C:\Users\ADMIN\.gradle\caches\transforms-4\fc719a6e5ef89f0c6f387e2611876323\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.github.peaquyen.xJournal.test.app-activity-ktx-1.8.2-31 C:\Users\ADMIN\.gradle\caches\transforms-4\fe74059334e7ef94200ed51775e49d1d\transformed\activity-ktx-1.8.2\res
+com.github.peaquyen.xJournal.test.app-androidTest-32 C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\build\generated\res\resValues\androidTest\debug
+com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-33 C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.github.peaquyen.xJournal.test.app-mergeDebugAndroidTestResources-34 C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.github.peaquyen.xJournal.test.app-debugAndroidTest-35 C:\Users\ADMIN\Documents\KMA\Android\xJournal\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
