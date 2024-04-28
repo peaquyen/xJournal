@@ -57,200 +57,199 @@
 40-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:20:9-54
 41        android:supportsRtl="true"
 41-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:21:9-35
-42        android:testOnly="true"
-43        android:theme="@style/Theme.xJournal" >
-43-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:22:9-46
-44        <activity
-44-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:24:9-32:20
-45            android:name="com.github.peaquyen.xJournal.MainActivity"
-45-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:25:13-41
-46            android:exported="true"
-46-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:26:13-36
-47            android:theme="@style/Theme.xJournal.MySplash" >
-47-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:27:13-59
-48            <intent-filter>
-48-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:28:13-31:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:29:17-69
-49-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:29:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:30:17-77
-51-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:30:27-74
-52            </intent-filter>
-53        </activity>
-54
-55        <service
-55-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-56            android:name="androidx.room.MultiInstanceInvalidationService"
-56-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-57            android:directBootAware="true"
-57-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-58            android:exported="false" />
-58-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-59
-60        <provider
-60-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:30:9-38:20
-61            android:name="androidx.startup.InitializationProvider"
-61-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:31:13-67
-62            android:authorities="com.github.peaquyen.xJournal.androidx-startup"
-62-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:32:13-68
-63            android:exported="false" >
-63-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:33:13-37
-64            <meta-data
-64-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:35:13-37:52
-65                android:name="io.realm.kotlin.mongodb.internal.RealmSyncInitializer"
-65-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:36:17-85
-66                android:value="androidx.startup" />
-66-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:37:17-49
-67            <meta-data
-67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-69                android:value="androidx.startup" />
-69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-70            <meta-data
-70-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-71-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-72                android:value="androidx.startup" />
-72-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-73            <meta-data
-73-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:32:13-34:52
-74                android:name="io.realm.kotlin.internal.RealmInitializer"
-74-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:33:17-73
-75                android:value="androidx.startup" />
-75-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:34:17-49
-76            <meta-data
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-78                android:value="androidx.startup" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-79        </provider>
-80
-81        <service
-81-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:24:9-32:19
-82            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-82-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:25:13-94
-83            android:enabled="true"
-83-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:26:13-35
-84            android:exported="false" >
-84-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:27:13-37
-85            <meta-data
-85-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:29:13-31:104
-86                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-86-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:30:17-76
-87                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-87-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:31:17-101
-88        </service>
-89
-90        <activity
-90-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:34:9-41:20
-91            android:name="androidx.credentials.playservices.HiddenActivity"
-91-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:35:13-76
-92            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-92-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:36:13-87
-93            android:enabled="true"
-93-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:37:13-35
-94            android:exported="false"
-94-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:38:13-37
-95            android:fitsSystemWindows="true"
-95-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:39:13-45
-96            android:theme="@style/Theme.Hidden" >
-96-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:40:13-48
-97        </activity>
-98        <activity
-98-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-99            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-99-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-100            android:excludeFromRecents="true"
-100-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-101            android:exported="false"
-101-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-102-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-103        <!--
-104            Service handling Google Sign-In user revocation. For apps that do not integrate with
-105            Google Sign-In, this service will never be started.
-106        -->
-107        <service
-107-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-108            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-108-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-109            android:exported="true"
-109-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-110            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-110-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-111            android:visibleToInstantApps="true" />
-111-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-112
-113        <activity
-113-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-114-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-115            android:exported="false"
-115-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-116-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-117
-118        <meta-data
-118-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
-119            android:name="com.google.android.gms.version"
-119-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
-120            android:value="@integer/google_play_services_version" />
-120-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
-121
-122        <activity
-122-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:23:9-25:39
-123            android:name="androidx.activity.ComponentActivity"
-123-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:24:13-63
-124            android:exported="true" />
-124-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:25:13-36
-125        <activity
-125-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-126            android:name="androidx.compose.ui.tooling.PreviewActivity"
-126-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-127            android:exported="true" />
-127-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-128
-129        <receiver
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-130            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-131            android:directBootAware="false"
-131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-132            android:enabled="true"
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-133            android:exported="true"
-133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-134            android:permission="android.permission.DUMP" >
-134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-135            <intent-filter>
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-136                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-137            </intent-filter>
-138            <intent-filter>
-138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-139                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-140            </intent-filter>
-141            <intent-filter>
-141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-142                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-143            </intent-filter>
-144            <intent-filter>
-144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-145                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-146            </intent-filter>
-147        </receiver>
-148    </application>
-149
-150</manifest>
+42        android:theme="@style/Theme.xJournal" >
+42-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:22:9-46
+43        <activity
+43-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:24:9-32:20
+44            android:name="com.github.peaquyen.xJournal.MainActivity"
+44-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:25:13-41
+45            android:exported="true"
+45-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:26:13-36
+46            android:theme="@style/Theme.xJournal.MySplash" >
+46-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:27:13-59
+47            <intent-filter>
+47-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:28:13-31:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:29:17-69
+48-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:29:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:30:17-77
+50-->A:\AndroidAlternativeProjects\xJournal\app\src\main\AndroidManifest.xml:30:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <service
+54-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+55            android:name="androidx.room.MultiInstanceInvalidationService"
+55-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+56            android:directBootAware="true"
+56-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+57            android:exported="false" />
+57-->[androidx.room:room-runtime:2.6.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\bcd5dcdde70e890d1416608d9038a0ac\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+58
+59        <provider
+59-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:30:9-38:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:31:13-67
+61            android:authorities="com.github.peaquyen.xJournal.androidx-startup"
+61-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:32:13-68
+62            android:exported="false" >
+62-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:33:13-37
+63            <meta-data
+63-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:35:13-37:52
+64                android:name="io.realm.kotlin.mongodb.internal.RealmSyncInitializer"
+64-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:36:17-85
+65                android:value="androidx.startup" />
+65-->[io.realm.kotlin:library-sync-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\40a330b28b843ca9b179ace08c021e79\transformed\library-sync-release\AndroidManifest.xml:37:17-49
+66            <meta-data
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+68                android:value="androidx.startup" />
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\cfa1e0a10b93df781c1fbee2d3d62d23\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+71                android:value="androidx.startup" />
+71-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\e4b95e3f268853a4849fefbdd9c2a7f8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:32:13-34:52
+73                android:name="io.realm.kotlin.internal.RealmInitializer"
+73-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:33:17-73
+74                android:value="androidx.startup" />
+74-->[io.realm.kotlin:cinterop-android:1.15.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\2489a3a9063f841ce23316043aaae1fd\transformed\cinterop-release\AndroidManifest.xml:34:17-49
+75            <meta-data
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+77                android:value="androidx.startup" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+78        </provider>
+79
+80        <service
+80-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:24:9-32:19
+81            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+81-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:25:13-94
+82            android:enabled="true"
+82-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:26:13-35
+83            android:exported="false" >
+83-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:27:13-37
+84            <meta-data
+84-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:29:13-31:104
+85                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+85-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:30:17-76
+86                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+86-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:31:17-101
+87        </service>
+88
+89        <activity
+89-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:34:9-41:20
+90            android:name="androidx.credentials.playservices.HiddenActivity"
+90-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:35:13-76
+91            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+91-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:36:13-87
+92            android:enabled="true"
+92-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:37:13-35
+93            android:exported="false"
+93-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:38:13-37
+94            android:fitsSystemWindows="true"
+94-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:39:13-45
+95            android:theme="@style/Theme.Hidden" >
+95-->[androidx.credentials:credentials-play-services-auth:1.3.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\383e504d5768a506e27024a3bdcb67ea\transformed\credentials-play-services-auth-1.3.0-alpha01\AndroidManifest.xml:40:13-48
+96        </activity>
+97        <activity
+97-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+98            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+98-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+99            android:excludeFromRecents="true"
+99-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+102        <!--
+103            Service handling Google Sign-In user revocation. For apps that do not integrate with
+104            Google Sign-In, this service will never be started.
+105        -->
+106        <service
+106-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+107            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+107-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+108            android:exported="true"
+108-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+109            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+109-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+110            android:visibleToInstantApps="true" />
+110-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\dfb1857709a4b3b13d331a188f4b994a\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+111
+112        <activity
+112-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+113            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+113-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+114            android:exported="false"
+114-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+115-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\053f3a6c0c91d0060f8309b679d4efdd\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+116
+117        <meta-data
+117-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+118            android:name="com.google.android.gms.version"
+118-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+119            android:value="@integer/google_play_services_version" />
+119-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\Pea Quyen\.gradle\caches\transforms-4\c8ddbb8325946af4b2b74a4916667b67\transformed\play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+120
+121        <activity
+121-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:23:9-25:39
+122            android:name="androidx.activity.ComponentActivity"
+122-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:24:13-63
+123            android:exported="true" />
+123-->[androidx.compose.ui:ui-test-manifest:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\1667509c3aad5910e10d88d34db61da2\transformed\ui-test-manifest-1.7.0-alpha01\AndroidManifest.xml:25:13-36
+124        <activity
+124-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+125            android:name="androidx.compose.ui.tooling.PreviewActivity"
+125-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+126            android:exported="true" />
+126-->[androidx.compose.ui:ui-tooling-android:1.7.0-alpha01] C:\Users\Pea Quyen\.gradle\caches\transforms-4\9b469eac917d57c5b8d2f55203472e2d\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+127
+128        <receiver
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+129            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+130            android:directBootAware="false"
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+131            android:enabled="true"
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+132            android:exported="true"
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+133            android:permission="android.permission.DUMP" >
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+135                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+136            </intent-filter>
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+138                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+141                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+144                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Pea Quyen\.gradle\caches\transforms-4\f5b320ec77852fa8229029224981bbc5\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+145            </intent-filter>
+146        </receiver>
+147    </application>
+148
+149</manifest>

@@ -7,6 +7,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import com.github.peaquyen.xJournal.util.Constants.CLIENT_ID
 import com.stevdzasan.messagebar.ContentWithMessageBar
+import com.stevdzasan.messagebar.MessageBarState
 import com.stevdzasan.onetap.OneTapSignInState
 import com.stevdzasan.onetap.OneTapSignInWithGoogle
 
@@ -17,7 +18,9 @@ fun AuthenticationScreen(
     loadingState: Boolean,
     oneTapState: OneTapSignInState,
     onButtonClicked: () -> Unit, //takes no parameters and returns no result
-    messageBarState: () -> Unit
+    messageBarState: MessageBarState,
+    onTokenIdReceived: (String /*tokenID*/) -> Unit,
+    onDialogDismissed: (String) -> Unit
 ) {
     Scaffold(
         content = {
@@ -35,10 +38,12 @@ fun AuthenticationScreen(
         clientId = CLIENT_ID,
         onTokenIdReceived = { tokenId ->
             Log.d("Auth", tokenId)
-            messageBarState.addSuccess("Successfully Authenticate!")
+                onTokenIdReceived(tokenId)
+//            messageBarState.addSuccess("Successfully Authenticate!")
         },
         onDialogDismissed = { message ->
             Log.d("Auth", message)
+            onDialogDismissed(message)
             messageBarState.addError(Exception(message))
         }
     )
