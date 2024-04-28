@@ -25,6 +25,13 @@ mipmap ic_launcher_round
 string app_name
 string auth_subtitle
 string auth_title
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
 style Theme.xJournal
 style Theme.xJournal.MySplash
 xml backup_rules

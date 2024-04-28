@@ -11,7 +11,7 @@ plugins {
     id("dagger.hilt.android.plugin") //version "2.38.1'" apply false
     // version "2.38.1" // Hilt is a dependency injection library
     // for Android
-    id("com.google.gms.google-services") version "4.3.14" apply false
+    id("com.google.gms.google-services") version "4.3.14" //apply false
     // services to your project
 
     id("kotlin-kapt")

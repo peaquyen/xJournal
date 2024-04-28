@@ -42,6 +42,7 @@ fun NavGraphBuilder.authenticationRouter() {
         val oneTapState = rememberOneTapSignInState()
         val messageBarState = rememberMessageBarState()
 
+        //TODO: app shut even before Auth func
         AuthenticationScreen(
             loadingState = loadingState,
             oneTapState = oneTapState,
@@ -55,10 +56,10 @@ fun NavGraphBuilder.authenticationRouter() {
                     viewModel.signInWithMongoAtlas(
                         tokenId = tokenId,
                         onSuccess = {
-                            if (it) {
+                            //if (it) {
                                 messageBarState.addSuccess("Successfully Authenticated!")
                                 viewModel.setLoading(false)
-                            }
+                            //}
                         },
                         onError = {
                             messageBarState.addError(it)
@@ -69,11 +70,11 @@ fun NavGraphBuilder.authenticationRouter() {
             },
             onDialogDismissed = { message ->
                 messageBarState.addError(Exception(message))
+                viewModel.setLoading(false)
             }
         )
     }
 }
-
 fun NavGraphBuilder.homeRouter() {
     composable(route = Screen.Home.route) {
 
