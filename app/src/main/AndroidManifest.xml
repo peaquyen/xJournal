@@ -12,6 +12,7 @@ global application settings such as the application icon, label, theme, etc.-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <application
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,6 +22,7 @@ global application settings such as the application icon, label, theme, etc.-->
         android:supportsRtl="true"
         android:theme="@style/Theme.xJournal"
         tools:targetApi="31">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

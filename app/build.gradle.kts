@@ -153,7 +153,7 @@ dependencies {
 
     // One-Tap Compose: easily integrate One-Tap Sign in with Google
     // -> oh no
-    implementation("com.github.stevdza-san:OneTapCompose:1.0.12")
+    implementation("com.github.stevdza-san:OneTapCompose:1.0.10")
 
     // Desugar JDK: help certain code in the app without api required
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")

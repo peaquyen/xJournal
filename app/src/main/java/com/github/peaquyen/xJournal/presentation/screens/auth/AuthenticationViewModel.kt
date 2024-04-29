@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import io.realm.kotlin.mongodb.App
 import io.realm.kotlin.mongodb.Credentials
+import io.realm.kotlin.mongodb.GoogleAuthType
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -22,19 +23,20 @@ class AuthenticationViewModel : ViewModel() {
 
     fun signInWithMongoAtlas(
         tokenId: String,
-        onSuccess: () -> Unit,
+        onSuccess: (Boolean) -> Unit,
         onError: (Exception) -> Unit
     ) {
         viewModelScope.launch {
             try {
                 val result = withContext(Dispatchers.IO) {
                     App.create(APP_ID).login(
-                        Credentials.jwt(tokenId)
+//                        Credentials.jwt(tokenId),
+                        Credentials.google(tokenId, GoogleAuthType.ID_TOKEN)
                     ).loggedIn
                 }
                 withContext(Dispatchers.Main) {
                     if (result) {
-                        onSuccess()
+                        onSuccess(true)
                         delay(600)
                         authenticated.value = true
                     } else {

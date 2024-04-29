@@ -1,138 +1,138 @@
 [
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_romantic.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/romantic.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_disappointed.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/disappointed.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_shameful.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/shameful.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/ic_launcher_background.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_surprised.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/surprised.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_awful.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/awful.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_logo.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/logo.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_humorous.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/humorous.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_lonely.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/lonely.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_neutral.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/neutral.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/xml_data_extraction_rules.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/xml/data_extraction_rules.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_bored.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/bored.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_suspicious.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/suspicious.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_google_logo.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/google_logo.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_neutral.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/neutral.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_angry.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/angry.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_logo.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/logo.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_tense.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/tense.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_humorous.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/humorous.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_happy.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/happy.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_disappointed.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/disappointed.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/xml_data_extraction_rules.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_depressed.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/depressed.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_google_logo.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/google_logo.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_calm.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/calm.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_mysterious.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/mysterious.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_angry.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/angry.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_surprised.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/surprised.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_bored.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/bored.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_lonely.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/lonely.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_depressed.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/depressed.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/xml_backup_rules.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_happy.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/happy.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_romantic.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/romantic.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_suspicious.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/suspicious.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_tense.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/tense.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_awful.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/awful.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/xml_backup_rules.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/xml/backup_rules.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_calm.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/calm.xml"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.github.peaquyen.xJournal.app-debug-5:/drawable_mysterious.xml.flat",
-        "source": "com.github.peaquyen.xJournal.app-main-7:/drawable/mysterious.xml"
+        "merged": "com.github.peaquyen.xJournal.app-debug-71:/drawable_shameful.xml.flat",
+        "source": "com.github.peaquyen.xJournal.app-main-73:/drawable/shameful.xml"
     }
 ]
