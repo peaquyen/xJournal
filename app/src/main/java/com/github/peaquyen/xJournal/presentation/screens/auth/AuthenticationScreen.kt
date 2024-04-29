@@ -58,3 +58,5 @@ fun AuthenticationScreen(
         }
     }
 }
+
+//[Service][Unknown(4351)] cannot find app using Client App ID 'xiupeaxjournal'.
