@@ -1,4 +1,4 @@
-package com.github.peaquyen.xJournal.presentation.components
+package com.github.peaquyen.xJournal.presentation.screens.home
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row

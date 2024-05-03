@@ -11,7 +11,7 @@ class Journal: RealmObject {
     @PrimaryKey
     var _id: ObjectId = ObjectId.invoke()
     var ownerId: String = ""
-    var mood: String = Mood.Neutral.name
+    var feeling: String = Feeling.Neutral.name
     var title: String = ""
     var description: String = ""
     var images: RealmList<String> = realmListOf()

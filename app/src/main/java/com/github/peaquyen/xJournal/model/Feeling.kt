@@ -4,7 +4,7 @@ import androidx.compose.ui.graphics.Color
 import com.github.peaquyen.xJournal.R
 import com.github.peaquyen.xJournal.ui.theme.*
 
-enum class Mood(
+enum class Feeling(
     val icon: Int,
     val contentColor: Color,
     val containerColor: Color
