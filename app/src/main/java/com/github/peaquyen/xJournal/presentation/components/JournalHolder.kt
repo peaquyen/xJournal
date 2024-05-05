@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.components
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -46,9 +47,9 @@ fun JournalHolder(
     Journal: Journal,
     onClick: (String) -> Unit
 ) {
-    var localDensity = LocalDensity.current
+    val localDensity = LocalDensity.current
     var componentHeight by remember { mutableStateOf(0.dp) }
-
+    var galleryOpened by remember { mutableStateOf(false) }
     Row(
         modifier = Modifier
             .clickable (
@@ -89,6 +90,20 @@ fun JournalHolder(
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
                 )
+                if (Journal.images.isNotEmpty()){
+                    ShowGalleryButton(
+                        galleryOpened = galleryOpened,
+                        onClick = {
+                            galleryOpened = !galleryOpened
+                        }
+                    )
+                }
+                AnimatedVisibility(visible = galleryOpened) {
+                    Column(modifier = Modifier.padding(all = 14.dp)) {
+                        Gallery(images = Journal.images)
+                    }
+
+                }
             }
         }
     }
@@ -130,17 +145,17 @@ fun JournalHeader(feelingName: String, time: Instant) {
     }
 }
 
-@Preview
-@Composable
-fun JournalHolderPreview() {
-    JournalHolder(
-        Journal = Journal().apply {
-            title = "Title"
-            description = "Description"
-            feeling = "HAPPY"
-        },
-        onClick = {}
-    )
-}
+//@Preview
+//@Composable
+//fun JournalHolderPreview() {
+//    JournalHolder(
+//        Journal = Journal().apply {
+//            title = "Title"
+//            description = "Description"
+//            feeling = "HAPPY"
+//        },
+//        onClick = {}
+//    )
+//}
 
 
