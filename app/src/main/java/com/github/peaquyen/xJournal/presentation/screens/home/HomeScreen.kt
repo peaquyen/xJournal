@@ -3,6 +3,7 @@ package com.github.peaquyen.xJournal.presentation.screens.home
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -59,7 +60,7 @@ fun HomeScreen(
                }
            },
            content = {
-
+                HomeContent(paddingValues = PaddingValues(),journalNotes = mapOf() , onClick = {})
            }
        )
    }
