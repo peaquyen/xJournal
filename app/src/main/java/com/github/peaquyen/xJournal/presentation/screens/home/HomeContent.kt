@@ -49,7 +49,7 @@ fun HomeContent(
                     items = journals,
                     key = { it._id.toString() }
                 ) {
-                    JournalHolder(Journal = it, onClick = onClick)
+                    JournalHolder(journal = it, onClick = onClick)
                 }
             }
         }

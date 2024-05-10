@@ -71,7 +71,6 @@ fun NavGraphBuilder.authenticationRouter(
         val oneTapState = rememberOneTapSignInState()
         val messageBarState = rememberMessageBarState()
 
-        //TODO: app shut even before Auth func
         AuthenticationScreen(
             authenticated = authenticated,
             loadingState = loadingState,
@@ -81,6 +80,8 @@ fun NavGraphBuilder.authenticationRouter(
                 oneTapState.open()
                 viewModel.setLoading(true)
             },
+            // The function takes one argument, tokenId, which is the token ID received from
+            // the authentication process.
             onTokenIdReceived = {tokenId ->
                 viewModel.signInWithMongoAtlas(
                     tokenId = tokenId,

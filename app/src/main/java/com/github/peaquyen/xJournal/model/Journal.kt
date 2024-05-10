@@ -7,6 +7,7 @@ import io.realm.kotlin.types.RealmObject
 import io.realm.kotlin.types.annotations.PrimaryKey
 import org.mongodb.kbson.ObjectId
 
+// data structure
 open class Journal: RealmObject {
     @PrimaryKey
     var _id: ObjectId = ObjectId.invoke()

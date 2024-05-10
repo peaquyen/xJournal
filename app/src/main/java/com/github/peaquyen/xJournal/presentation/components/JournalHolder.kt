@@ -1,5 +1,7 @@
 package com.github.peaquyen.xJournal.presentation.components
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -42,10 +44,12 @@ import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+@RequiresApi(Build.VERSION_CODES.O) //the annotated method or class should only be
+// used on Android devices running API level 26 (Android 8.0, codename Oreo) or higher.
 @Composable
 fun JournalHolder(
-    Journal: Journal,
-    onClick: (String) -> Unit
+    journal: Journal,
+    onClick: (String) -> Unit /*object ID of each journal*/
 ) {
     val localDensity = LocalDensity.current
     var componentHeight by remember { mutableStateOf(0.dp) }
@@ -57,7 +61,7 @@ fun JournalHolder(
                 interactionSource = remember {
                     MutableInteractionSource()
                 }
-            ) {onClick(Journal._id.toString())}
+            ) {onClick(journal._id.toString())}
     ) {
         Spacer(modifier = Modifier.width(14.dp))
         Surface(
@@ -65,7 +69,7 @@ fun JournalHolder(
                 .width(2.dp)
                 .height(componentHeight + 14.dp),
             tonalElevation = Elevation.Level1
-        ) { }
+        ) {}
         Spacer(modifier = Modifier.width(20.dp))
 
         // box of content
@@ -82,15 +86,15 @@ fun JournalHolder(
             Column(
                 modifier = Modifier.fillMaxWidth()
             ){
-                JournalHeader(Journal.feeling, Journal.date.toInstant())
+                JournalHeader(journal.feeling, journal.date.toInstant())
                 Text(
                     modifier = Modifier.padding(14.dp),
-                    text = Journal.description,
+                    text = journal.description,
                     style = TextStyle(fontSize = MaterialTheme.typography.bodyLarge.fontSize),
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
                 )
-                if (Journal.images.isNotEmpty()){
+                if (journal.images.isNotEmpty()){
                     ShowGalleryButton(
                         galleryOpened = galleryOpened,
                         onClick = {
@@ -98,17 +102,18 @@ fun JournalHolder(
                         }
                     )
                 }
+                // NOTE: remember this carefully
                 AnimatedVisibility(visible = galleryOpened) {
                     Column(modifier = Modifier.padding(all = 14.dp)) {
-                        Gallery(images = Journal.images)
+                        Gallery(images = journal.images)
                     }
-
                 }
             }
         }
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun JournalHeader(feelingName: String, time: Instant) {
     val feeling by remember { mutableStateOf(Feeling.valueOf(feelingName)) }
@@ -145,17 +150,18 @@ fun JournalHeader(feelingName: String, time: Instant) {
     }
 }
 
-//@Preview
-//@Composable
-//fun JournalHolderPreview() {
-//    JournalHolder(
-//        Journal = Journal().apply {
-//            title = "Title"
-//            description = "Description"
-//            feeling = "HAPPY"
-//        },
-//        onClick = {}
-//    )
-//}
+@RequiresApi(Build.VERSION_CODES.O)
+@Preview
+@Composable
+fun JournalHolderPreview() {
+    JournalHolder(
+            journal = Journal().apply {
+            title = "Title"
+            description = "Description"
+            feeling = "HAPPY"
+        },
+        onClick = {}
+    )
+}
 
 

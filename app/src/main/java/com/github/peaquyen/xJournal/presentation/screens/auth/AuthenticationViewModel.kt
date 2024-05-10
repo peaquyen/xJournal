@@ -30,7 +30,6 @@ class AuthenticationViewModel : ViewModel() {
             try {
                 val result = withContext(Dispatchers.IO) {
                     App.create(APP_ID).login(
-
                         // TODO: Uncomment this line to use JWT token
 //                        Credentials.jwt(tokenId),
                         Credentials.google(tokenId, GoogleAuthType.ID_TOKEN)
@@ -52,7 +51,4 @@ class AuthenticationViewModel : ViewModel() {
             }
         }
     }
-
 }
-
-//
