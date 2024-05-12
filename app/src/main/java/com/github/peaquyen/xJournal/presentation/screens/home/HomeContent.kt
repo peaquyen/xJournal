@@ -63,6 +63,8 @@ fun DateHeader(LocalDate: LocalDate) {
     // A composable function that displays the date of the diary entry
 
     Row(
+        modifier = Modifier
+            .padding(vertical = 14.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Column(horizontalAlignment = Alignment.End){

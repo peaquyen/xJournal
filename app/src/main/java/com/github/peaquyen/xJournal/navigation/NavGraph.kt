@@ -23,6 +23,7 @@ import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeScreen
+import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 import com.stevdzasan.messagebar.rememberMessageBarState
@@ -111,11 +112,14 @@ fun NavGraphBuilder.homeRouter(
     navigateToAuth: () -> Unit
 ) {
     composable(route = Screen.Home.route) {
+        val viewModel: HomeViewModel = viewModel()
+        val journals by viewModel.journals
         val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()
 
         HomeScreen(
+            journals = journals,
             drawerState = drawerState,
             onSignOutClick = {
                 signOutDialogOpened = true

@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -28,10 +29,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.R
+import com.github.peaquyen.xJournal.data.repository.Journals
+import com.github.peaquyen.xJournal.util.RequestState
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun HomeScreen(
+    journals: Journals,
     drawerState: DrawerState,
     onSignOutClick: () -> Unit,
     onMenuClick: () -> Unit,
@@ -60,7 +64,40 @@ fun HomeScreen(
                }
            },
            content = {
-                HomeContent(paddingValues = PaddingValues(),journalNotes = mapOf() , onClick = {})
+               when (journals) {
+                   is RequestState.Success -> {
+                       HomeContent(
+                           paddingValues = PaddingValues(),
+                           journalNotes = journals.data,
+                           onClick = {}
+                       )
+                   }
+                   is RequestState.Error -> {
+                       EmptyPage(
+                           title = "Error",
+                           subtitle = "Error: ${journals.exception.message}",
+                       )
+                   }
+                   is RequestState.Loading -> {
+                       Box(
+                           modifier = Modifier.fillMaxWidth(),
+                           contentAlignment = Alignment.Center
+                       ) {
+                          CircularProgressIndicator()
+                       }
+                   }
+                   else -> {
+                       Box(
+                           modifier = Modifier.fillMaxWidth(),
+                           contentAlignment = Alignment.Center
+                       ) {
+                           Text(
+                               text = "No data available",
+                               style = MaterialTheme.typography.bodySmall
+                           )
+                       }
+                   }
+               }
            }
        )
    }
