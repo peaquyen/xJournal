@@ -5,8 +5,8 @@ import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -18,7 +18,6 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.github.peaquyen.xJournal.data.repository.MongoDB
 import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
@@ -26,6 +25,7 @@ import com.github.peaquyen.xJournal.presentation.screens.home.HomeScreen
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
+import com.github.peaquyen.xJournal.util.RequestState
 import com.stevdzasan.messagebar.rememberMessageBarState
 import com.stevdzasan.onetap.rememberOneTapSignInState
 import io.realm.kotlin.mongodb.App
@@ -113,7 +113,7 @@ fun NavGraphBuilder.homeRouter(
 ) {
     composable(route = Screen.Home.route) {
         val viewModel: HomeViewModel = viewModel()
-        val journals by viewModel.journals
+        val journals by viewModel.getObserveJournals().observeAsState(initial = RequestState.Loading)
         val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()
@@ -132,9 +132,6 @@ fun NavGraphBuilder.homeRouter(
             navigateToWrite = navigateToWrite
         )
 
-        LaunchedEffect(key1 = Unit) {
-            MongoDB.configureTheRealm()
-        }
 
         DisplayAlertDialog(
             title = "Sign Out",

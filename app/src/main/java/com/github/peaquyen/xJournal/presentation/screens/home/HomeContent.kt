@@ -21,6 +21,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.github.peaquyen.xJournal.data.repository.Journals
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.presentation.components.JournalHolder
 import java.time.LocalDate
@@ -47,9 +48,9 @@ fun HomeContent(
 
                 items(
                     items = journals,
-                    key = { it._id.toString() }
-                ) {
-                    JournalHolder(journal = it, onClick = onClick)
+                    key = { journal ->  journal.id }
+                ) {journal ->
+                    JournalHolder(journal = journal, onClick = onClick)
                 }
             }
         }

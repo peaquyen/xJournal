@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
 import androidx.navigation.compose.rememberNavController
-import com.github.peaquyen.xJournal.data.repository.MongoDB
 import com.github.peaquyen.xJournal.navigation.Screen
 import com.github.peaquyen.xJournal.navigation.SetUpNavGraph
 import com.github.peaquyen.xJournal.ui.theme.xJournalTheme
@@ -21,7 +20,6 @@ class MainActivity : ComponentActivity() {
 
         // Transparent status bar and navigation bar
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        MongoDB.configureTheRealm()
 
         setContent {
             xJournalTheme {

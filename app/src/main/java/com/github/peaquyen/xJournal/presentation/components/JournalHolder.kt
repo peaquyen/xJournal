@@ -33,12 +33,12 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.ui.theme.Elevation
-import com.github.peaquyen.xJournal.util.toInstant
+import com.github.peaquyen.xJournal.util.convertLocalDateToInstant
+import com.github.peaquyen.xJournal.util.convertStringToInstant
 import java.time.Instant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -61,7 +61,7 @@ fun JournalHolder(
                 interactionSource = remember {
                     MutableInteractionSource()
                 }
-            ) {onClick(journal._id.toString())}
+            ) {onClick(journal.id.toString())}
     ) {
         Spacer(modifier = Modifier.width(14.dp))
         Surface(
@@ -86,7 +86,9 @@ fun JournalHolder(
             Column(
                 modifier = Modifier.fillMaxWidth()
             ){
-                JournalHeader(journal.feeling, journal.date.toInstant())
+                val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+                val dateInstant = convertStringToInstant(journal.date, formatter)
+                JournalHeader(journal.feeling, dateInstant)
                 Text(
                     modifier = Modifier.padding(14.dp),
                     text = journal.description,
@@ -94,7 +96,7 @@ fun JournalHolder(
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
                 )
-                if (journal.images.isNotEmpty()){
+               if (journal.images?.isNotEmpty() == true){
                     ShowGalleryButton(
                         galleryOpened = galleryOpened,
                         onClick = {
@@ -150,18 +152,5 @@ fun JournalHeader(feelingName: String, time: Instant) {
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.O)
-@Preview
-@Composable
-fun JournalHolderPreview() {
-    JournalHolder(
-            journal = Journal().apply {
-            title = "Title"
-            description = "Description"
-            feeling = "HAPPY"
-        },
-        onClick = {}
-    )
-}
 
 

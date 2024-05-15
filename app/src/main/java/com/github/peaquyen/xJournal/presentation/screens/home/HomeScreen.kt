@@ -1,9 +1,9 @@
 package com.github.peaquyen.xJournal.presentation.screens.home
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -13,7 +13,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -29,13 +28,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.R
-import com.github.peaquyen.xJournal.data.repository.Journals
+import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.util.RequestState
+import java.time.LocalDate
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun HomeScreen(
-    journals: Journals,
+    journals: RequestState<Map<LocalDate, List<Journal>>>,
     drawerState: DrawerState,
     onSignOutClick: () -> Unit,
     onMenuClick: () -> Unit,
@@ -65,38 +65,36 @@ fun HomeScreen(
            },
            content = {
                when (journals) {
-                   is RequestState.Success -> {
-                       HomeContent(
-                           paddingValues = PaddingValues(),
-                           journalNotes = journals.data,
-                           onClick = {}
-                       )
+                   is RequestState.Loading -> {
+                       // Display a loading indicator
                    }
+
                    is RequestState.Error -> {
                        EmptyPage(
                            title = "Error",
                            subtitle = "Error: ${journals.exception.message}",
                        )
                    }
-                   is RequestState.Loading -> {
-                       Box(
-                           modifier = Modifier.fillMaxWidth(),
-                           contentAlignment = Alignment.Center
-                       ) {
-                          CircularProgressIndicator()
-                       }
+
+                   is RequestState.Success -> {
+                       val journalNotes = (journals as RequestState.Success).data
+                       HomeContent(
+                           paddingValues = it,
+                           journalNotes = journalNotes,
+                           onClick = {
+                               // Handle the click event here
+                               // For example, navigate to the journal detail screen
+                           }
+                       )
+                       // Log the journal entries
+                       journalNotes.entries.forEachIndexed { index, entry ->
+                            val date = entry.key
+                            val journals = entry.value
+                            Log.d("JournalList", "Entry $index: Date = $date, Journals = $journals")
+                        }
                    }
-                   else -> {
-                       Box(
-                           modifier = Modifier.fillMaxWidth(),
-                           contentAlignment = Alignment.Center
-                       ) {
-                           Text(
-                               text = "No data available",
-                               style = MaterialTheme.typography.bodySmall
-                           )
-                       }
-                   }
+
+                   RequestState.Idle -> TODO()
                }
            }
        )

@@ -162,6 +162,16 @@ dependencies {
 
     // To use constraintlayout in compose
     implementation("androidx.constraintlayout:constraintlayout-compose:1.1.0-alpha13")
+
+    // Retrofit and Gson
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
+
+    //lifeCycle
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+
 }
 
 // The kotlin block configures the Kotlin plugin for the project.
