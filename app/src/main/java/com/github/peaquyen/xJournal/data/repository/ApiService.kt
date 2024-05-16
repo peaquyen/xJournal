@@ -4,6 +4,7 @@ import com.github.peaquyen.xJournal.model.Journal
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Headers
+import retrofit2.http.POST
 import retrofit2.http.Path
 import java.time.LocalDate
 
@@ -13,8 +14,9 @@ interface ApiService {
 
     @GET("journals")
     suspend fun getAllJournals(): Response<List<Journal>>
-
     @GET("journals/{id}")
     suspend fun getJournal(@Path("id") id: String): Journal
+    @POST("journals")
+    suspend fun createJournal(journal: Journal): Journal
 
 }

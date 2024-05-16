@@ -23,6 +23,7 @@ import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScre
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeScreen
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
+import com.github.peaquyen.xJournal.presentation.screens.write.WriteScreen
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 import com.github.peaquyen.xJournal.util.RequestState
@@ -56,7 +57,11 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
                 navController.navigate(Screen.Authentication.route)
             }
         )
-        writeRouter()
+        writeRouter(
+            onBackPressed = {
+                navController.popBackStack()
+            }
+        )
     }
 }
 
@@ -157,7 +162,7 @@ fun NavGraphBuilder.homeRouter(
     }
 }
 
-fun NavGraphBuilder.writeRouter() {
+fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
     composable(route = Screen.Write.route,
         arguments = listOf(navArgument(name = WRITE_SCREEN_ARGUMENT_KEY) {
             type = NavType.StringType
@@ -165,6 +170,9 @@ fun NavGraphBuilder.writeRouter() {
             defaultValue = null
         })
     ) {
-
+        // WriteScreen
+        WriteScreen(
+            onBackPressed = onBackPressed
+        )
     }
 }
