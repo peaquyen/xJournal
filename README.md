@@ -1,6 +1,6 @@
 <br />
+# :camera_flash: **Screenshots** :camera_flash:
 <div align="center">
-  # :camera_flash: **Screenshots** :camera_flash:
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://postimg.cc/FdyDx05m" alt="Thumbnail Image">
   </a>
