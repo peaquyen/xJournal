@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-     <img src="https://i.postimg.cc/cgw6Lyr1/image.png" alt="Thumbnail Image">
+     <img src="https://i.postimg.cc/rmY4gqT4/image.png" alt="Thumbnail Image">
   </a>
 
 <h1 align = "center">
@@ -18,7 +18,7 @@
 [Thông số](#arrow_lower_right-deployment-arrow_lower_right) ~
 [Kiến trúc](#hammer_and_wrench-architecture-hammer_and_wrench) ~
 [Công nghệ](#building_construction-tech-stack-building_construction) ~ 
-[Giấy phép](#scroll-license-scroll)  
+[Giấy phép](#scroll-giay-phep-scroll)  
  
 </div>
     
@@ -30,7 +30,7 @@ xJournal được xây dựng theo kiến trúc **Model-View-ViewModel** (MVVM) 
 xJournal sử dụng Material 3 để có giao diện người dùng nhất quán:
 
 <p align="center">
-<img img width="2300" height="400" src="https://i.postimg.cc/FdyDx05m/xJournal-Demo.png" alt="Thumbnail Image">
+<img img width="2300" height="400" src="https://i.postimg.cc/bJMWpRmG/x-Journal-Demo.png" alt="Thumbnail Image">
 <!-- <img img width="200" height="400" src="./readme-assets/screenshots/screen_1.png"> &nbsp;&nbsp;&nbsp;&nbsp;
 <img img width="200" height="400" src="./readme-assets/screenshots/screen_2.png"> &nbsp;&nbsp;&nbsp;&nbsp;   
 <img img width="200" height="400" src="./readme-assets/screenshots/screen_3.png"> &nbsp;&nbsp;&nbsp;&nbsp;  -->
@@ -79,15 +79,10 @@ Project xJournal sử dụng nhiều thư viện và công cụ phổ biến tro
 * [Material Design 3](https://m3.material.io/) - một hệ thống hướng dẫn, thành phần và công cụ có thể thích ứng để hỗ trợ hiển thị tốt nhất về thiết kế giao diện người dùng.
 * [Compose Navigation](https://developer.android.com/jetpack/compose/navigation) - điều hướng giữa các thành phần kết hợp trong khi tận dụng các trạng thái của NavController giúp theo dõi ngăn xếp của các thành phần kết hợp tạo nên màn hình trong ứng dụng.
 * [Dagger Hilt](https://dagger.dev/hilt/) - dùng cho Dependency Injection.
-* [Coil](https://coil-kt.github.io/coil/) - thư viện tải hình ảnh dành cho Android được hỗ trợ bởi Kotlin Coroutines
 * [SplashScreen API](https://developer.android.com/develop/ui/views/launch/splash-screen) - API SplashScreen cho phép ứng dụng khởi chạy kèm theo hoạt ảnh, bao gồm chuyển động trong ứng dụng khi khởi chạy, màn hình chờ hiển thị biểu tượng ứng dụng của bạn và quá trình chuyển đổi sang chính ứng dụng của bạn.
 
 * [Room](https://developer.android.com/topic/libraries/architecture/room) thư viện cung cấp lớp trừu tượng trên SQLite để cho phép truy cập cơ sở dữ liệu mạnh mẽ hơn đồng thời khai thác toàn bộ sức mạnh của SQLite.
 * [Mongo](https://www.mongodb.com/) - MongoDB là cơ sở dữ liệu NoSQL phổ biến, được sử dụng trong ứng dụng này để lưu trữ và quản lý dữ liệu liên quan đến các mục nhật ký. (được sử dụng trong branch main)
-* [Firebase Storage](https://firebase.google.com/docs/storage/android/start) -  Firebase Cloud Storage là giải pháp lưu trữ đám mây đáng tin cậy và có thể mở rộng được sử dụng trong ứng dụng để lưu trữ và truy xuất ảnh liên quan đến các mục nhật ký.
-* [Firebase Auth](https://firebase.google.com/docs/auth/android/start) - Xác thực Firebase cung cấp hệ thống xác thực an toàn và dễ sử dụng, cho phép người dùng đăng nhập và truy cập các mục nhật ký của họ một cách an toàn.
-* [Max Keppeler's Sheet Compose Dialog](https://github.com/maxkeppeler/sheets-compose-dialogs) - F- Xác thực Firebase cung cấp hệ thống xác thực an toàn và dễ sử dụng, cho phép người dùng đăng nhập và truy cập các mục nhật ký của họ một cách an toàn.
-
 * [Stevdza-San's MessageBarCompose](https://github.com/stevdza-san/MessageBarCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
 
 * [Stevdza-San's OneTapCompose](https://github.com/stevdza-san/OneTapCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
