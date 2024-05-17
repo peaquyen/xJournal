@@ -80,8 +80,6 @@ Project xJournal sử dụng nhiều thư viện và công cụ phổ biến tro
 * [Dagger Hilt](https://dagger.dev/hilt/) - dùng cho Dependency Injection.
 * [SplashScreen API](https://developer.android.com/develop/ui/views/launch/splash-screen) - API SplashScreen cho phép ứng dụng khởi chạy kèm theo hoạt ảnh, bao gồm chuyển động trong ứng dụng khi khởi chạy, màn hình chờ hiển thị biểu tượng ứng dụng của bạn và quá trình chuyển đổi sang chính ứng dụng của bạn.
 
-* [Room](https://developer.android.com/topic/libraries/architecture/room) thư viện cung cấp lớp trừu tượng trên SQLite để cho phép truy cập cơ sở dữ liệu mạnh mẽ hơn đồng thời khai thác toàn bộ sức mạnh của SQLite.
-* [Mongo](https://www.mongodb.com/) - MongoDB là cơ sở dữ liệu NoSQL phổ biến, được sử dụng trong ứng dụng này để lưu trữ và quản lý dữ liệu liên quan đến các mục nhật ký. (được sử dụng trong branch main)
 * [Stevdza-San's MessageBarCompose](https://github.com/stevdza-san/MessageBarCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
 
 * [Stevdza-San's OneTapCompose](https://github.com/stevdza-san/OneTapCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
