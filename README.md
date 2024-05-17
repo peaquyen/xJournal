@@ -79,7 +79,8 @@ Project xJournal sử dụng nhiều thư viện và công cụ phổ biến tro
 * [Compose Navigation](https://developer.android.com/jetpack/compose/navigation) - điều hướng giữa các thành phần kết hợp trong khi tận dụng các trạng thái của NavController giúp theo dõi ngăn xếp của các thành phần kết hợp tạo nên màn hình trong ứng dụng.
 * [Dagger Hilt](https://dagger.dev/hilt/) - dùng cho Dependency Injection.
 * [SplashScreen API](https://developer.android.com/develop/ui/views/launch/splash-screen) - API SplashScreen cho phép ứng dụng khởi chạy kèm theo hoạt ảnh, bao gồm chuyển động trong ứng dụng khi khởi chạy, màn hình chờ hiển thị biểu tượng ứng dụng của bạn và quá trình chuyển đổi sang chính ứng dụng của bạn.
-
+* [Retrofit](https://square.github.io/retrofit/) - Ứng dụng client HTTP an toàn dành cho Android.
+* [OkHttp3](https://square.github.io/okhttp/) - Một thư viện cho phép kết nối internet sử dụng giao thức Http một cách dễ dàng và nhanh chóng hơn.
 * [Stevdza-San's MessageBarCompose](https://github.com/stevdza-san/MessageBarCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
 
 * [Stevdza-San's OneTapCompose](https://github.com/stevdza-san/OneTapCompose) - Giao diện người dùng Thanh thông báo hoạt ảnh có thể được bao quanh nội dung màn hình của bạn để hiển thị thông báo Lỗi/Thành công trong ứng dụng của bạn. Nó được điều chỉnh và tối ưu hóa để sử dụng với các dự án Compose và Material 3.
