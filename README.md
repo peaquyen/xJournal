@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-     <img src="https://i.postimg.cc/rmY4gqT4/image.png" alt="Thumbnail Image">
+    <img height="900" width="900" src="https://i.postimg.cc/rmY4gqT4/image.png" alt="Thumbnail Image">
   </a>
 
 <h1 align = "center">
@@ -30,7 +30,7 @@ xJournal được xây dựng theo kiến trúc **Model-View-ViewModel** (MVVM) 
 xJournal sử dụng Material 3 để có giao diện người dùng nhất quán:
 
 <p align="center">
-<img img width="2300" height="400" src="https://i.postimg.cc/bJMWpRmG/x-Journal-Demo.png" alt="Thumbnail Image">
+<img src="https://i.postimg.cc/bJMWpRmG/x-Journal-Demo.png" alt="Thumbnail Image">
 <!-- <img img width="200" height="400" src="./readme-assets/screenshots/screen_1.png"> &nbsp;&nbsp;&nbsp;&nbsp;
 <img img width="200" height="400" src="./readme-assets/screenshots/screen_2.png"> &nbsp;&nbsp;&nbsp;&nbsp;   
 <img img width="200" height="400" src="./readme-assets/screenshots/screen_3.png"> &nbsp;&nbsp;&nbsp;&nbsp;  -->
@@ -58,7 +58,7 @@ Các thông số chính của xJournal
 
 | :tính năng:xác thực                | :tính năng:home                       | :tính năng:viết nhật ký           |
 |-------------------------------------|-------------------------------------|-------------------------------------|
-| ![](./readme-assets/gifs/gif_1.gif) | ![](./readme-assets/gifs/gif_2.gif) | ![](./readme-assets/gifs/gif_3.gif) |
+| <img src = "https://i.postimg.cc/KY5HQQkk/auth.jpg"> | <img src = "https://i.postimg.cc/4yY2fg8V/home.jpg"> | <img src = "https://i.postimg.cc/3rqbLkRB/write.jpg"> |
 
 
  - **Tính năng Xác thực**: Tính năng này tập trung vào việc xác thực và xác minh người dùng. Nó sử dụng Đăng nhập Google để đảm bảo rằng người dùng có thể truy cập an toàn vào các mục nhật ký của họ. Bằng cách xác thực người dùng, ứng dụng đảm bảo rằng chỉ những cá nhân được ủy quyền mới có thể tương tác với các nhật ký cá nhân của họ.
