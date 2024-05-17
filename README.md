@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img height="900" width="900" src="https://i.postimg.cc/rmY4gqT4/image.png" alt="Thumbnail Image">
+    <img src="https://i.postimg.cc/rmY4gqT4/image.png" alt="Thumbnail Image">
   </a>
 
 <h1 align = "center">
@@ -14,18 +14,17 @@
 
 
   
-[Ảnh chụp màn hình](#camera_flash-screenshots-camera_flash) ~
-[Thông số](#arrow_lower_right-deployment-arrow_lower_right) ~
-[Kiến trúc](#hammer_and_wrench-architecture-hammer_and_wrench) ~
-[Công nghệ](#building_construction-tech-stack-building_construction) ~ 
-[Giấy phép](#scroll-giay-phep-scroll)  
+[Ảnh chụp màn hình](#camera_flash:**Ảnh_chụp_màn_hình**:camera_flash) ~
+[Thông số](#arrow_lower_right:**Thông_số**:arrow_lower_right) ~
+[Kiến trúc](#hammer_and_wrench:**Kiến_trúc**:hammer_and_wrench) ~
+[Công nghệ](#building_construction:**Công_nghệ**:building_construction) ~ 
  
 </div>
     
 xJournal cho phép người dùng viết và lưu các mục nhật ký với tùy chọn có thể bao gồm ảnh và biểu cảm được thể hiện bởi biểu tượng cảm xúc.
 xJournal được xây dựng theo kiến trúc **Model-View-ViewModel** (MVVM) của Android Clean Architecture .
 
-# :camera_flash: **Ảnh chụp màn hình** :camera_flash:
+# :camera_flash:**Ảnh_chụp_màn_hình**:camera_flash:
 
 xJournal sử dụng Material 3 để có giao diện người dùng nhất quán:
 
@@ -39,7 +38,7 @@ xJournal sử dụng Material 3 để có giao diện người dùng nhất quá
 
 
 
-# :arrow_lower_right: **Thông số** :arrow_lower_right:
+# :arrow_lower_right:**Thông_số**:arrow_lower_right:
 Các thông số chính của xJournal
 
 | Thông Số       | Giá trị |
@@ -51,10 +50,10 @@ Các thông số chính của xJournal
 | kotlinVersion  | 1.8.0   |
 
 Để build và chạy ứng dụng, bạn cần cài đặt phiên bản Android Studio Iguana | 2023.2.1 hoặc mới hơn
-# :hammer_and_wrench: **Kiến trúc** :hammer_and_wrench:
+# :hammer_and_wrench:**Kiến_trúc**:hammer_and_wrench:
 
 ### Điều Hướng
-Ứng dụng có tổng cộng :three: màn hình đích sử dụng phần điều hướng qua Compose để quản lý điều hướng.
+Ứng dụng có tổng cộng :three: màn hình đích sử dụng Compose để quản lý điều hướng.
 
 | :tính năng:xác thực                | :tính năng:home                       | :tính năng:viết nhật ký           |
 |-------------------------------------|-------------------------------------|-------------------------------------|
@@ -68,7 +67,7 @@ Các thông số chính của xJournal
  - **Tính năng Viết**: Tính năng Viết cho phép người dùng tạo các mục nhật ký mới hoặc chỉnh sửa các mục hiện có. Nó cung cấp một giao diện liền mạch và trực quan để người dùng ghi lại và tài liệu hóa những suy nghĩ, khoảnh khắc và kỷ niệm của họ. xJournal cho phép người dùng cá nhân hóa nội dung bằng cách thêm biểu tượng cảm xúc và hình ảnh kèm theo.
 
 
-# :building_construction: **Công nghệ** :building_construction:
+# :building_construction:**Công_nghệ**:building_construction:
 
 Project xJournal sử dụng nhiều thư viện và công cụ phổ biến trong Hệ sinh thái Android:
 
