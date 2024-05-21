@@ -44,8 +44,10 @@ fun HomeScreen(
     drawerState: DrawerState,
     onSignOutClick: () -> Unit,
     onMenuClick: () -> Unit,
-    navigateToWrite: () -> Unit
-) {
+    navigateToWrite: () -> Unit,
+    navigateToWriteWithArgs: (String) -> Unit,
+
+    ) {
     val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
    NavigationDrawer(
          drawerState = drawerState,
@@ -89,10 +91,7 @@ fun HomeScreen(
                        HomeContent(
                            paddingValues = it,
                            journalNotes = journalNotes,
-                           onClick = {
-                               // Handle the click event here
-                               // For example, navigate to the journal detail screen
-                           }
+                           onClick = navigateToWriteWithArgs
                        )
                        // Log the journal entries
                        journalNotes.entries.forEachIndexed { index, entry ->

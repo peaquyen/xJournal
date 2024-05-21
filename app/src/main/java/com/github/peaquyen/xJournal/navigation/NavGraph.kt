@@ -1,10 +1,15 @@
 package com.github.peaquyen.xJournal.navigation
 
+import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModelFactory
 import android.annotation.SuppressLint
+import android.util.Log
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
@@ -18,12 +23,15 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.github.peaquyen.xJournal.data.repository.JournalRepository
+import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeScreen
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 import com.github.peaquyen.xJournal.presentation.screens.write.WriteScreen
+import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModel
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 import com.github.peaquyen.xJournal.util.RequestState
@@ -51,6 +59,9 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
         homeRouter(
             navigateToWrite = {
                 navController.navigate(Screen.Write.route)
+            },
+            navigateToWriteWithArgs = { id ->
+                navController.navigate(Screen.Write.passJournalId(id))
             },
             navigateToAuth = {
                 navController.popBackStack()
@@ -114,6 +125,7 @@ fun NavGraphBuilder.authenticationRouter(
 
 fun NavGraphBuilder.homeRouter(
     navigateToWrite: () -> Unit,
+    navigateToWriteWithArgs: (String) -> Unit,
     navigateToAuth: () -> Unit
 ) {
     composable(route = Screen.Home.route) {
@@ -134,7 +146,8 @@ fun NavGraphBuilder.homeRouter(
                     drawerState.open()
                 }
             },
-            navigateToWrite = navigateToWrite
+            navigateToWrite = navigateToWrite,
+            navigateToWriteWithArgs = navigateToWriteWithArgs
         )
 
 
@@ -162,6 +175,7 @@ fun NavGraphBuilder.homeRouter(
     }
 }
 
+@OptIn(ExperimentalFoundationApi::class)
 fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
     composable(route = Screen.Write.route,
         arguments = listOf(navArgument(name = WRITE_SCREEN_ARGUMENT_KEY) {
@@ -170,9 +184,32 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
             defaultValue = null
         })
     ) {
+        val journalId = it.arguments?.getString(WRITE_SCREEN_ARGUMENT_KEY)
+        it.savedStateHandle.set(WRITE_SCREEN_ARGUMENT_KEY, journalId)
+
+        val viewModel: WriteViewModel = viewModel(
+            factory = WriteViewModelFactory(it.savedStateHandle, JournalRepository())
+        )
+        val selectedJournal by viewModel.selectedJournal.observeAsState()
+        Log.d("WriteRouter", "selectedJournal: ${selectedJournal?.title}")
+
+
+        val pagerState = rememberPagerState(pageCount = { Feeling.entries.size })
+        val pageNumber by remember{ derivedStateOf{pagerState.currentPage} }
         // WriteScreen
         WriteScreen(
+            pagerState = pagerState,
+            selectedJournal = selectedJournal,
+            moodName = {
+                Feeling.entries[pageNumber].name
+            },
+            onTitleChanged = { title ->
+                viewModel.setTitle(title)
+            },
+            onDescriptionChanged = { description ->
+                viewModel.setDescription(description)
+            },
             onBackPressed = onBackPressed
-        )
+        ) { }
     }
 }

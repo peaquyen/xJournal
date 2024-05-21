@@ -1,6 +1,7 @@
 package com.github.peaquyen.xJournal.presentation.components
 
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Spring
@@ -41,7 +42,6 @@ import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.ui.theme.Elevation
-import com.github.peaquyen.xJournal.util.convertLocalDateToInstant
 import com.github.peaquyen.xJournal.util.convertStringToInstant
 import java.time.Instant
 import java.time.ZoneId
@@ -65,7 +65,9 @@ fun JournalHolder(
                 interactionSource = remember {
                     MutableInteractionSource()
                 }
-            ) {onClick(journal.id.toString())}
+            ) {
+                onClick(journal.id)
+            }
     ) {
         Spacer(modifier = Modifier.width(14.dp))
         Surface(

@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.navigation
 
+import android.util.Log
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 sealed class Screen(val route: String) {
     data object Authentication : Screen( route = "authentication_screen")

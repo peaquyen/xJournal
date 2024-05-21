@@ -15,7 +15,7 @@ interface ApiService {
     @GET("journals")
     suspend fun getAllJournals(): Response<List<Journal>>
     @GET("journals/{id}")
-    suspend fun getJournal(@Path("id") id: String): Journal
+    suspend fun getJournal(@Path("id") id: String): Response<Journal>
     @POST("journals")
     suspend fun createJournal(journal: Journal): Journal
 
