@@ -4,6 +4,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.github.peaquyen.xJournal.data.repository.JournalRepository
+import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 
 class WriteViewModelFactory(
     private val savedStateHandle: SavedStateHandle,

@@ -92,7 +92,7 @@ fun JournalHolder(
             Column(
                 modifier = Modifier.fillMaxWidth()
             ){
-                val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
+                val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
                 val dateInstant = convertStringToInstant(journal.date, formatter)
                 JournalHeader(journal.feeling, dateInstant)
                 Text(
@@ -121,7 +121,7 @@ fun JournalHolder(
                     ),
                 ) {
                     Column(modifier = Modifier.padding(all = 14.dp)) {
-                        Gallery(images = journal.images)
+                        journal.images?.let { Gallery(images = it) }
                     }
                 }
             }

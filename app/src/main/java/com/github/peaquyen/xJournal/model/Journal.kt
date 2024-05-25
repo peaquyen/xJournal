@@ -1,14 +1,18 @@
 package com.github.peaquyen.xJournal.model
 
-import java.time.LocalDate
-
 // data structure
 data class Journal(
-    val id: String, // convert API Value:  INT -> String
-    val ownerId: String,
+    var id: String, // convert API Value:  INT -> String
+    var ownerId: String,
     var feeling: String,
     var title: String,
     var description: String,
-    val images: List<String>,
-    val date: String
-)
+    var images: List<String>,
+    var date: String
+){
+    companion object {
+        fun createNew(ownerId: String, feeling: String, title: String, description: String, images: List<String>, date: String): Journal {
+            return Journal(id = "", ownerId = ownerId, feeling = feeling, title = title, description = description, images = images, date = date)
+        }
+    }
+}

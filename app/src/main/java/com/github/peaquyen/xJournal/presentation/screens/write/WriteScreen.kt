@@ -19,7 +19,9 @@ fun WriteScreen(
     onBackPressed: () -> Unit,
     onTitleChanged: (String) -> Unit,
     onDescriptionChanged: (String) -> Unit,
-    onDeleteConfirmed: () -> Unit
+    onDeleteConfirmed: () -> Unit,
+    onSaveClicked: (Journal) -> Unit,
+    ownerId : String
 ) {
     LaunchedEffect(key1 = null) {
         selectedJournal?.feeling?.let { Feeling.valueOf(it).ordinal }
@@ -31,7 +33,7 @@ fun WriteScreen(
                 selectedJournal = selectedJournal,
                 moodName = moodName,
                 onBackPressed = onBackPressed,
-                onDeleteConfirmed = onDeleteConfirmed
+                onDeleteConfirmed = onDeleteConfirmed,
             )
         },
         content = {
@@ -41,7 +43,9 @@ fun WriteScreen(
                 title = selectedJournal?.title ?: "",
                 onTitleChanged = onTitleChanged,
                 description = selectedJournal?.description ?: "",
-                onDescriptionChanged = onDescriptionChanged
+                onDescriptionChanged = onDescriptionChanged,
+                onSaveClicked = onSaveClicked,
+                ownerId = ownerId
             )}
     )
 }

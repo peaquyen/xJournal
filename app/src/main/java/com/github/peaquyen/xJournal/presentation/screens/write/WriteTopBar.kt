@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
+import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
@@ -27,6 +28,7 @@ import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.util.convertStringToInstant
 import java.text.SimpleDateFormat
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
@@ -41,7 +43,7 @@ fun WriteTopBar(
     selectedJournal: Journal?,
     moodName: () -> String,
     onBackPressed: () -> Unit,
-    onDeleteConfirmed: () -> Unit
+    onDeleteConfirmed: () -> Unit,
 ) {
     val currentDate by remember { mutableStateOf(LocalDate.now()) }
     val currentTime = remember { mutableStateOf(ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))) }
@@ -52,15 +54,14 @@ fun WriteTopBar(
         DateTimeFormatter.ofPattern("hh:mm a").format(currentTime.value).uppercase()
     }
 
-    val selectedJournalDateTime = remember(selectedJournal) {
-        if (selectedJournal != null) {
+   val selectedJournalDateTime = remember(selectedJournal) {
+        if (selectedJournal?.date != null) {
             val dateFormat = SimpleDateFormat("dd MMM yyyy, hh:mm a", Locale.getDefault())
             dateFormat.timeZone = TimeZone.getTimeZone("UTC")
             dateFormat.format(Date.from(selectedJournal.date.convertStringToInstant())).uppercase()
         } else {
             "Unknown"
         }
-
     }
     CenterAlignedTopAppBar(
         navigationIcon = {

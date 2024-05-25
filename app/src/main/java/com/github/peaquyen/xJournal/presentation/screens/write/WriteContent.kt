@@ -1,6 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
-import android.graphics.drawable.shapes.Shape
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -32,9 +32,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.LiveData
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.github.peaquyen.xJournal.model.Feeling
+import com.github.peaquyen.xJournal.model.Journal
+import com.github.peaquyen.xJournal.util.Constants.CLIENT_ID
+import java.time.ZoneId
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
+import java.util.Locale
+import java.util.UUID
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
 @Composable
@@ -44,9 +52,20 @@ fun WriteContent(
     title: String,
     onTitleChanged: (String) -> Unit,
     description: String,
-    onDescriptionChanged: (String) -> Unit
+    onDescriptionChanged: (String) -> Unit,
+    onSaveClicked: (Journal) -> Unit,
+    ownerId : String
 ) {
     val scrollState = rememberScrollState()
+
+    // Get Date Time Current for Journal to be created
+    val currentDateTime = ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))
+    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
+    val formattedCurrentDateTime = currentDateTime.format(formatter)
+
+    Log.d("WriteContent", "Current DateTime: $formattedCurrentDateTime")
+
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -82,7 +101,9 @@ fun WriteContent(
             TextField(
                 modifier = Modifier.fillMaxWidth(),
                 value = title,
-                onValueChange = onTitleChanged,
+                onValueChange = {
+                    onTitleChanged(it)
+                },
                 placeholder = { Text("Title") },
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Transparent,
@@ -107,7 +128,9 @@ fun WriteContent(
             TextField(
                 modifier = Modifier.fillMaxWidth(),
                 value = description,
-                onValueChange = onDescriptionChanged,
+                onValueChange = {
+                    onDescriptionChanged(it)
+                },
                 placeholder = { Text(text = "Tell me about it.") },
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.Transparent,
@@ -133,7 +156,19 @@ fun WriteContent(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(54 .dp),
-                onClick = { /*TODO*/ },
+                onClick = {
+                    onSaveClicked(
+                        Journal(
+                            id = UUID.randomUUID().toString(),
+                            ownerId = ownerId,
+                            feeling = Feeling.entries[pagerState.currentPage].name,
+                            title = title,
+                            description = description,
+                            images = emptyList(),
+                            date = formattedCurrentDateTime
+                        )
+                    )
+                },
                 shape = Shapes().small
             ) {
                 Text(text = "Save")

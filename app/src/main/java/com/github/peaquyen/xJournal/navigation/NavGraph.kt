@@ -1,6 +1,5 @@
 package com.github.peaquyen.xJournal.navigation
 
-import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModelFactory
 import android.annotation.SuppressLint
 import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -32,6 +31,8 @@ import com.github.peaquyen.xJournal.presentation.screens.home.HomeScreen
 import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 import com.github.peaquyen.xJournal.presentation.screens.write.WriteScreen
 import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModel
+import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModelFactory
+import com.github.peaquyen.xJournal.util.Constants
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 import com.github.peaquyen.xJournal.util.RequestState
@@ -135,6 +136,7 @@ fun NavGraphBuilder.homeRouter(
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()
 
+
         HomeScreen(
             journals = journals,
             drawerState = drawerState,
@@ -184,32 +186,46 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
             defaultValue = null
         })
     ) {
+//        val homeViewModel: HomeViewModel = viewModel()
+        var ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+
         val journalId = it.arguments?.getString(WRITE_SCREEN_ARGUMENT_KEY)
         it.savedStateHandle.set(WRITE_SCREEN_ARGUMENT_KEY, journalId)
 
         val viewModel: WriteViewModel = viewModel(
             factory = WriteViewModelFactory(it.savedStateHandle, JournalRepository())
         )
+
         val selectedJournal by viewModel.selectedJournal.observeAsState()
-        Log.d("WriteRouter", "selectedJournal: ${selectedJournal?.title}")
 
 
         val pagerState = rememberPagerState(pageCount = { Feeling.entries.size })
         val pageNumber by remember{ derivedStateOf{pagerState.currentPage} }
         // WriteScreen
-        WriteScreen(
-            pagerState = pagerState,
-            selectedJournal = selectedJournal,
-            moodName = {
-                Feeling.entries[pageNumber].name
-            },
-            onTitleChanged = { title ->
-                viewModel.setTitle(title)
-            },
-            onDescriptionChanged = { description ->
-                viewModel.setDescription(description)
-            },
-            onBackPressed = onBackPressed
-        ) { }
+        if (ownerId != null) {
+            WriteScreen(
+                pagerState = pagerState,
+                selectedJournal = selectedJournal,
+                moodName = {
+                    Feeling.entries[pageNumber].name
+                },
+                onTitleChanged = {
+                    viewModel.setTitle(it)
+                },
+                onDescriptionChanged = {
+                    viewModel.setDescription(it)
+                },
+                onBackPressed = onBackPressed,
+                onDeleteConfirmed = {
+                    // delete the journal
+                },
+                onSaveClicked = {
+                    viewModel.insertJournal(it)
+                    onBackPressed()
+//                    homeViewModel.updateJournals()
+                },
+                ownerId = ownerId
+            )
+        }
     }
 }
