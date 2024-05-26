@@ -49,7 +49,6 @@ class WriteViewModel(
 
     private fun initializeSelectedJournal() {
         Log.d("WriteViewModel", "Current DateTime: $formattedCurrentDateTime")
-
         if (_selectedJournal.value == null) {
             _selectedJournal.value = Journal(
                 id = UUID.randomUUID().toString(),
@@ -63,14 +62,6 @@ class WriteViewModel(
         }
     }
 
-//    fun upsertJournal() {
-//        val journal = _selectedJournal.value ?: return
-//        if (journal.id.isEmpty()) {
-//            insertJournal(journal)
-//        } else {
-//            updateJournal(journal)
-//        }
-//    }
 
     private fun getJournal(id: String) {
         viewModelScope.launch(Dispatchers.IO) {
@@ -99,16 +90,21 @@ class WriteViewModel(
         }
     }
 
-//    fun updateJournal(journal: Journal) {
-//        viewModelScope.launch(Dispatchers.IO) {
-//            try {
-//                val response = repository.updateJournal(journal)
-//                _selectedJournal.postValue(response)
-//            } catch (e: Exception) {
-//                Log.e("WriteViewModel", "Error updating journal: ", e)
-//            }
-//        }
-//    }
+    fun updateJournal(id: String ,journal: Journal) {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+                if (ownerId != null) {
+                    val response = repository.updateJournal(id ,ownerId, journal)
+                    _selectedJournal.postValue(response)
+                } else {
+                    Log.e("WriteViewModel", "Owner ID is null")
+                }
+            } catch (e: Exception) {
+                Log.e("WriteViewModel", "Error updating journal: ", e)
+            }
+        }
+    }
 
     fun setTitle(title: String) {
         _selectedJournal.value = _selectedJournal.value?.copy(title = title)

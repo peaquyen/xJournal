@@ -220,7 +220,11 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
                     // delete the journal
                 },
                 onSaveClicked = {
-                    viewModel.insertJournal(it)
+                    if (journalId == null) {
+                        viewModel.insertJournal(it)
+                    } else {
+                        viewModel.updateJournal(journalId ,it)
+                    }
                     onBackPressed()
 //                    homeViewModel.updateJournals()
                 },

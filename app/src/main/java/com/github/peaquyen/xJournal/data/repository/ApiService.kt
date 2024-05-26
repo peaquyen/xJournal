@@ -21,7 +21,6 @@ interface ApiService {
     @POST("journals/")
     suspend fun insertJournal(@Body journal: Journal): Response<Journal>
 
-//    @PUT("journals/{ownerId}/{id}")
-//    suspend fun updateJournal(@Path("id") id: String, @Body journal: Journal): Response<Journal>
-
+    @PUT("journals/{ownerId}/{id}")
+    suspend fun updateJournal(@Path("ownerId") ownerId: String, @Path("id") id: String, @Body journal: Journal): Response<Journal>
 }
