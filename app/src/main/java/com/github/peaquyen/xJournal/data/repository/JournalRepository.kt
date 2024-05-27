@@ -83,4 +83,12 @@ class JournalRepository {
             throw Exception("Error: ${response.code()}")
         }
     }
+
+    suspend fun deleteJournal(id: String ,ownerId: String) {
+        try {
+            apiService.deleteJournal(ownerId, id)
+        } catch (e: Exception) {
+            throw e
+        }
+    }
 }

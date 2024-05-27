@@ -102,7 +102,8 @@ fun JournalHolder(
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
                 )
-               if (journal.images?.isNotEmpty() == true){
+                Log.d("JournalHolder", "images: ${journal.images}")
+               if (journal.images.isNotEmpty() && journal.images.first() != "[]"){
                     ShowGalleryButton(
                         galleryOpened = galleryOpened,
                         onClick = {

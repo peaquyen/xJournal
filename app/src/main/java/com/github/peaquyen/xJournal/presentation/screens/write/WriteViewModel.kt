@@ -51,7 +51,7 @@ class WriteViewModel(
                 feeling = "Neutral",
                 title = "",
                 description = "",
-                images = listOf(""),
+                images = listOf(),
                 date = formattedCurrentDateTime
             )
         }
@@ -95,6 +95,19 @@ class WriteViewModel(
                 }
             } catch (e: Exception) {
                 Log.e("WriteViewModel", "Error updating journal: ", e)
+            }
+        }
+    }
+
+    fun deleteJournal(id: String) {
+        viewModelScope.launch {
+            val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+            try {
+                if (ownerId != null) {
+                    repository.deleteJournal(id, ownerId)
+                }
+            } catch (e: Exception) {
+                Log.e("WriteViewModel", "Error deleting journal: ", e)
             }
         }
     }
