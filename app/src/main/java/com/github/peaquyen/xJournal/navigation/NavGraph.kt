@@ -227,7 +227,9 @@ fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed 
                 },
                 onBackPressed = onBackPressed,
                 onDeleteConfirmed = {
-                    // delete the journal
+                    viewModel.deleteJournal(journalId!!)
+                    homeViewModel.refreshJournals()
+                    onBackPressed()
                 },
                 onSaveClicked = {
                     if (journalId == null) {

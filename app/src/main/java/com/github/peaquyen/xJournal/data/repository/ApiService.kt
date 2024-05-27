@@ -3,6 +3,7 @@ package com.github.peaquyen.xJournal.data.repository
 import com.github.peaquyen.xJournal.model.Journal
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.DELETE
 import retrofit2.http.GET
 import retrofit2.http.Headers
 import retrofit2.http.POST
@@ -23,4 +24,8 @@ interface ApiService {
 
     @PUT("journals/{ownerId}/{id}")
     suspend fun updateJournal(@Path("ownerId") ownerId: String, @Path("id") id: String, @Body journal: Journal): Response<Journal>
+
+    @DELETE("journals/{ownerId}/{id}")
+    suspend fun deleteJournal(@Path("ownerId") ownerId: String, @Path("id") id: String ): Boolean
+
 }

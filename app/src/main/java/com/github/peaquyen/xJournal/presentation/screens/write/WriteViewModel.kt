@@ -99,6 +99,19 @@ class WriteViewModel(
         }
     }
 
+    fun deleteJournal(id: String) {
+        viewModelScope.launch {
+            val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+            try {
+                if (ownerId != null) {
+                    repository.deleteJournal(id, ownerId)
+                }
+            } catch (e: Exception) {
+                Log.e("WriteViewModel", "Error deleting journal: ", e)
+            }
+        }
+    }
+
     fun setTitle(title: String) {
         _selectedJournal.value = _selectedJournal.value?.copy(title = title)
     }
