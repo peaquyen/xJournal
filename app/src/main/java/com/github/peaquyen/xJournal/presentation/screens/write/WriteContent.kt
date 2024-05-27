@@ -164,7 +164,7 @@ fun WriteContent(
                             feeling = Feeling.entries[pagerState.currentPage].name,
                             title = title,
                             description = description,
-                            images = emptyList(),
+                            images = listOf(""),
                             date = formattedCurrentDateTime
                         )
                     )

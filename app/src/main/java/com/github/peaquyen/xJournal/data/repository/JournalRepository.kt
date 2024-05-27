@@ -5,7 +5,8 @@ import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.util.Constants
 import io.realm.kotlin.mongodb.App
 import retrofit2.Response
-
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 class JournalRepository {
     private val apiService: ApiService = ApiClient.getRetroInstance().create(ApiService::class.java)
 

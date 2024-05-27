@@ -146,9 +146,6 @@ dependencies {
     // support in androidx.compose.foundation.pager.
     implementation("com.google.accompanist:accompanist-pager:0.35.0-alpha")
 
-    // Date-Time Picker -> should change to official library
-    implementation("io.github.vanpra.compose-material-dialogs:datetime:0.9.0")
-
     // Message Bar Compose: -> ok
     implementation("com.github.stevdza-san:MessageBarCompose:1.0.8")
 

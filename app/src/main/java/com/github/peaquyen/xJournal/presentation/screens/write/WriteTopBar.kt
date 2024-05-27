@@ -1,6 +1,5 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
-import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
@@ -23,13 +22,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.util.convertStringToInstant
 import java.text.SimpleDateFormat
 import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.LocalTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -41,7 +39,7 @@ import java.util.TimeZone
 @Composable
 fun WriteTopBar(
     selectedJournal: Journal?,
-    moodName: () -> String,
+    feelingName: () -> String,
     onBackPressed: () -> Unit,
     onDeleteConfirmed: () -> Unit,
 ) {
@@ -54,7 +52,7 @@ fun WriteTopBar(
         DateTimeFormatter.ofPattern("hh:mm a").format(currentTime.value).uppercase()
     }
 
-   val selectedJournalDateTime = remember(selectedJournal) {
+    val selectedJournalDateTime = remember(selectedJournal) {
         if (selectedJournal?.date != null) {
             val dateFormat = SimpleDateFormat("dd MMM yyyy, hh:mm a", Locale.getDefault())
             dateFormat.timeZone = TimeZone.getTimeZone("UTC")
@@ -76,7 +74,7 @@ fun WriteTopBar(
             Column() {
                 Text(
                     modifier = Modifier.fillMaxWidth(),
-                    text = moodName(),
+                    text = feelingName(),
                     style = TextStyle(
                         fontSize = MaterialTheme.typography.titleLarge.fontSize,
                         fontWeight = FontWeight.Bold
@@ -97,7 +95,9 @@ fun WriteTopBar(
             }
         },
         actions = {
-            IconButton(onClick = { /*TODO*/ }) {
+            IconButton(onClick = {
+
+            }) {
                 Icon(
                     imageVector = Icons.Default.DateRange,
                     contentDescription = "Data icon",

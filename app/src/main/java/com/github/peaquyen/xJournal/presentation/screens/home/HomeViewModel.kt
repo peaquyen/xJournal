@@ -60,9 +60,7 @@ class HomeViewModel: ViewModel() {
         }
     }
 
-    fun updateJournals() {
-        viewModelScope.launch(Dispatchers.IO) {
-            makeApiCall()
-        }
+    fun refreshJournals() {
+        makeApiCall()
     }
 }

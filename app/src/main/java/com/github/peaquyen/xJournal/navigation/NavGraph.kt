@@ -8,6 +8,7 @@ import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.derivedStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
@@ -70,6 +71,7 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
             }
         )
         writeRouter(
+            navController = navController,
             onBackPressed = {
                 navController.popBackStack()
             }
@@ -136,6 +138,9 @@ fun NavGraphBuilder.homeRouter(
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()
 
+        LaunchedEffect(Unit) {
+            viewModel.refreshJournals() // Fetch the latest data when the screen is composed
+        }
 
         HomeScreen(
             journals = journals,
@@ -148,8 +153,12 @@ fun NavGraphBuilder.homeRouter(
                     drawerState.open()
                 }
             },
-            navigateToWrite = navigateToWrite,
-            navigateToWriteWithArgs = navigateToWriteWithArgs
+            navigateToWrite = {
+                navigateToWrite()
+            },
+            navigateToWriteWithArgs = {
+                navigateToWriteWithArgs(it)
+            }
         )
 
 
@@ -177,8 +186,9 @@ fun NavGraphBuilder.homeRouter(
     }
 }
 
+@SuppressLint("UnrememberedGetBackStackEntry", "UnrememberedMutableState")
 @OptIn(ExperimentalFoundationApi::class)
-fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
+fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed : () -> Unit){
     composable(route = Screen.Write.route,
         arguments = listOf(navArgument(name = WRITE_SCREEN_ARGUMENT_KEY) {
             type = NavType.StringType
@@ -186,8 +196,10 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
             defaultValue = null
         })
     ) {
-//        val homeViewModel: HomeViewModel = viewModel()
-        var ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+        // Get the HomeViewModel from the previous back stack entry
+        val homeViewModel: HomeViewModel = viewModel(navController.getBackStackEntry(Screen.Home.route))
+
+        val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
 
         val journalId = it.arguments?.getString(WRITE_SCREEN_ARGUMENT_KEY)
         it.savedStateHandle.set(WRITE_SCREEN_ARGUMENT_KEY, journalId)
@@ -197,8 +209,6 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
         )
 
         val selectedJournal by viewModel.selectedJournal.observeAsState()
-
-
         val pagerState = rememberPagerState(pageCount = { Feeling.entries.size })
         val pageNumber by remember{ derivedStateOf{pagerState.currentPage} }
         // WriteScreen
@@ -206,7 +216,7 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
             WriteScreen(
                 pagerState = pagerState,
                 selectedJournal = selectedJournal,
-                moodName = {
+                feelingName = {
                     Feeling.entries[pageNumber].name
                 },
                 onTitleChanged = {
@@ -225,8 +235,8 @@ fun NavGraphBuilder.writeRouter(onBackPressed : () -> Unit) {
                     } else {
                         viewModel.updateJournal(journalId ,it)
                     }
+                    homeViewModel.refreshJournals()
                     onBackPressed()
-//                    homeViewModel.updateJournals()
                 },
                 ownerId = ownerId
             )

@@ -7,9 +7,7 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.github.peaquyen.xJournal.data.repository.JournalRepository
-import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
-import com.github.peaquyen.xJournal.presentation.screens.home.HomeViewModel
 import com.github.peaquyen.xJournal.util.Constants
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
 import io.realm.kotlin.mongodb.App
@@ -39,8 +37,6 @@ class WriteViewModel(
         Log.d("Screen.Write", "passJournalId: $journalId")
 
         if (journalId != null) {
-            Log.d("WriteViewModel", "Current DateTime: $formattedCurrentDateTime")
-
             getJournal(journalId)
         } else {
             initializeSelectedJournal()
@@ -48,15 +44,14 @@ class WriteViewModel(
     }
 
     private fun initializeSelectedJournal() {
-        Log.d("WriteViewModel", "Current DateTime: $formattedCurrentDateTime")
         if (_selectedJournal.value == null) {
             _selectedJournal.value = Journal(
                 id = UUID.randomUUID().toString(),
                 ownerId = "663096cc65679e3f70503509",
-                feeling = Feeling.entries[0].name,
+                feeling = "Neutral",
                 title = "",
                 description = "",
-                images = emptyList(),
+                images = listOf(""),
                 date = formattedCurrentDateTime
             )
         }
@@ -64,10 +59,8 @@ class WriteViewModel(
 
 
     private fun getJournal(id: String) {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch {
             try {
-                val user_id = App.Companion.create(Constants.APP_ID).currentUser?.id
-
                 val journal = repository.getJournal(id)
                 _selectedJournal.postValue(journal)
             } catch (e: Exception) {
@@ -77,7 +70,7 @@ class WriteViewModel(
     }
 
     fun insertJournal(journal: Journal) {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch {
             try {
                 Log.d("WriteViewModel", "title: $journal")
 
@@ -114,11 +107,16 @@ class WriteViewModel(
         _selectedJournal.value = _selectedJournal.value?.copy(description = description)
     }
 
-    fun setFeeling(feeling: Feeling) {
-        _selectedJournal.value = _selectedJournal.value?.copy(feeling = feeling.name)
+    fun setFeeling(feelingName: String) {
+        val currentJournal = _selectedJournal.value
+        if (currentJournal != null) {
+            _selectedJournal.value = currentJournal.copy(feeling = feelingName)
+        }
     }
 
-    fun setDate(date: String) {
-        _selectedJournal.value = _selectedJournal.value?.copy(date = date)
+    fun setUpdateDateTime(zonedDateTime: ZonedDateTime) {
+        _selectedJournal.value = _selectedJournal.value?.copy(date = zonedDateTime.format(formatter))
     }
+
+
 }

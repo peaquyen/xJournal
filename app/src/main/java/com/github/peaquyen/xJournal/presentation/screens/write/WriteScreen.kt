@@ -1,6 +1,7 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
 import android.annotation.SuppressLint
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.pager.PagerState
 import androidx.compose.material3.Scaffold
@@ -13,25 +14,38 @@ import com.github.peaquyen.xJournal.model.Journal
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun WriteScreen(
-    pagerState : PagerState,
+    pagerState: PagerState,
     selectedJournal: Journal?,
-    moodName: () -> String,
+    feelingName: () -> String,
     onBackPressed: () -> Unit,
     onTitleChanged: (String) -> Unit,
     onDescriptionChanged: (String) -> Unit,
     onDeleteConfirmed: () -> Unit,
     onSaveClicked: (Journal) -> Unit,
-    ownerId : String
+    ownerId: String
 ) {
-    LaunchedEffect(key1 = null) {
-        selectedJournal?.feeling?.let { Feeling.valueOf(it).ordinal }
-            ?.let { pagerState.scrollToPage(it) }
+//    LaunchedEffect(key1 = null) {
+//        selectedJournal?.feeling?.let { Feeling.valueOf(it).ordinal }
+//            ?.let { pagerState.scrollToPage(it) }
+//    }
+
+    LaunchedEffect(selectedJournal) {
+        selectedJournal?.feeling?.let { feeling ->
+            Log.d("WriteScreen", "selectedJournal: $selectedJournal")
+            Log.d("WriteScreen", "feeling: $feeling")
+            val pageIndex = Feeling.entries.indexOfFirst { it.name == feeling }
+            if (pageIndex >= 0) {
+                pagerState.scrollToPage(pageIndex)
+                Log.d("WriteScreen", "scrollToPage: $pageIndex")
+            }
+        }
     }
+
     Scaffold(
         topBar = {
             WriteTopBar(
                 selectedJournal = selectedJournal,
-                moodName = moodName,
+                feelingName = feelingName,
                 onBackPressed = onBackPressed,
                 onDeleteConfirmed = onDeleteConfirmed,
             )
