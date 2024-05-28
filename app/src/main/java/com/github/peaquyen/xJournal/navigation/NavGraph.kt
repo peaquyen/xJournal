@@ -134,6 +134,7 @@ fun NavGraphBuilder.homeRouter(
     composable(route = Screen.Home.route) {
         val viewModel: HomeViewModel = viewModel()
         val journals by viewModel.getObserveJournals().observeAsState(initial = RequestState.Loading)
+        Log.d("HomeRouter", "journals: $journals")
         val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()

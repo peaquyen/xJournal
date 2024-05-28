@@ -38,6 +38,7 @@ import coil.request.ImageRequest
 import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.util.Constants.CLIENT_ID
+import com.github.peaquyen.xJournal.util.getCurrentDateTime
 import java.time.ZoneId
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -60,12 +61,7 @@ fun WriteContent(
     val scrollState = rememberScrollState()
 
     // Get Date Time Current for Journal to be created
-    val currentDateTime = ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))
-    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
-    val formattedCurrentDateTime = currentDateTime.format(formatter)
-
-    Log.d("WriteContent", "Current DateTime: $formattedCurrentDateTime")
-
+    val currentTime = getCurrentDateTime()
 
     Column(
         modifier = Modifier
@@ -158,7 +154,7 @@ fun WriteContent(
                     .fillMaxWidth()
                     .height(54 .dp),
                 onClick = {
-                    val journalDate = date ?: formattedCurrentDateTime
+                    val journalDate = date ?: currentTime
                     onSaveClicked(
                         Journal(
                             id = UUID.randomUUID().toString(),

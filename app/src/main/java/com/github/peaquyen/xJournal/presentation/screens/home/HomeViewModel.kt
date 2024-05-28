@@ -43,16 +43,24 @@ class HomeViewModel: ViewModel() {
                     Log.d("HomeViewModel", "API call successful: ${response.body()}")
                     val journalList: List<Journal> = response.body() ?: emptyList()
 
-                    // Chuyển đổi từ chuỗi ngày sang LocalDate
                     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
 
                     val journalsByDate: Map<LocalDate, List<Journal>> = journalList
-                        .sortedByDescending { LocalDateTime.parse(it.date, formatter) }
-                        .groupBy { LocalDateTime.parse(it.date, formatter).toLocalDate() }
+                        .sortedByDescending {
+                            val localDateTime = LocalDateTime.parse(it.date, formatter)
+                            val zonedDateTime = localDateTime.atZone(ZoneId.of("UTC"))
+                                .withZoneSameInstant(ZoneId.of("Asia/Ho_Chi_Minh"))
+                            zonedDateTime.toLocalDateTime()
+                        }
+                        .groupBy {
+                            val localDateTime = LocalDateTime.parse(it.date, formatter)
+                            val zonedDateTime = localDateTime.atZone(ZoneId.of("UTC"))
+                                .withZoneSameInstant(ZoneId.of("Asia/Ho_Chi_Minh"))
+                            zonedDateTime.toLocalDate()
+                        }
 
                     journals.postValue(RequestState.Success(journalsByDate))
                 } else {
-                    // Update the value of journals with an error
                     Log.e("HomeViewModel", "API request failed with response code: ${response.code()}")
                     journals.postValue(RequestState.Error(Exception("API request failed with response code: ${response.code()}")))
                 }

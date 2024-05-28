@@ -10,6 +10,7 @@ import com.github.peaquyen.xJournal.data.repository.JournalRepository
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.util.Constants
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
+import com.github.peaquyen.xJournal.util.getCurrentDateTime
 import io.realm.kotlin.mongodb.App
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,12 +26,9 @@ class WriteViewModel(
 ): ViewModel() {
     private val _selectedJournal = MutableLiveData<Journal?>()
 
-    // Get Date Time Current for Journal to be created
     val selectedJournal: LiveData<Journal?> get() = _selectedJournal
-    val currentDateTime = ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))
-    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", Locale.ENGLISH)
-    val formattedCurrentDateTime = currentDateTime.format(formatter)
 
+    val currentTime = getCurrentDateTime()
 
     init {
         val journalId = savedStateHandle.get<String>(WRITE_SCREEN_ARGUMENT_KEY)
@@ -52,11 +50,10 @@ class WriteViewModel(
                 title = "",
                 description = "",
                 images = listOf(),
-                date = formattedCurrentDateTime
+                date = currentTime
             )
         }
     }
-
 
     private fun getJournal(id: String) {
         viewModelScope.launch {
@@ -73,22 +70,20 @@ class WriteViewModel(
         viewModelScope.launch {
             try {
                 Log.d("WriteViewModel", "title: $journal")
-
                 val response = repository.insertJournal(journal)
                 _selectedJournal.postValue(response)
-
             } catch (e: Exception) {
                 Log.e("WriteViewModel", "Error inserting journal: ", e)
             }
         }
     }
 
-    fun updateJournal(id: String ,journal: Journal) {
+    fun updateJournal(id: String, journal: Journal) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
                 val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
                 if (ownerId != null) {
-                    val response = repository.updateJournal(id ,ownerId, journal)
+                    val response = repository.updateJournal(id, ownerId, journal)
                     _selectedJournal.postValue(response)
                 } else {
                     Log.e("WriteViewModel", "Owner ID is null")
@@ -126,10 +121,4 @@ class WriteViewModel(
             _selectedJournal.value = currentJournal.copy(feeling = feelingName)
         }
     }
-
-    fun setUpdateDateTime(zonedDateTime: ZonedDateTime) {
-        _selectedJournal.value = _selectedJournal.value?.copy(date = zonedDateTime.format(formatter))
-    }
-
-
 }

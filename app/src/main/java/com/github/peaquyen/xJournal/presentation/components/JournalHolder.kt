@@ -2,7 +2,6 @@ package com.github.peaquyen.xJournal.presentation.components
 
 import android.annotation.SuppressLint
 import android.os.Build
-import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.Spring
@@ -104,7 +103,7 @@ fun JournalHolder(
                     maxLines = 4,
                     overflow = TextOverflow.Ellipsis
                 )
-               if (journal.images.isNotEmpty() && journal.images.first() != "[]"){
+               if (journal.images.isNotEmpty()){
                     ShowGalleryButton(
                         galleryOpened = galleryOpened,
                         onClick = {
