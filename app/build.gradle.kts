@@ -137,7 +137,7 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
 
     // Google Auth
-     implementation("com.google.android.gms:play-services-auth:21.1.0")
+     implementation("com.google.android.gms:play-services-auth:20.1.0")
 
     // Coil: An image loading library for Android backed by Kotlin Coroutines.
     implementation("io.coil-kt:coil-compose:2.6.0")

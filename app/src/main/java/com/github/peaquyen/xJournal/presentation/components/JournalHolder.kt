@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.components
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresApi
@@ -48,6 +49,7 @@ import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
+@SuppressLint("ObsoleteSdkInt")
 @RequiresApi(Build.VERSION_CODES.O) //the annotated method or class should only be
 // used on Android devices running API level 26 (Android 8.0, codename Oreo) or higher.
 @Composable
