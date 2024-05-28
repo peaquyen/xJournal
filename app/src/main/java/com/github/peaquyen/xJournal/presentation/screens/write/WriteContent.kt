@@ -49,6 +49,7 @@ import java.util.UUID
 fun WriteContent(
     paddingValues: PaddingValues,
     pagerState : PagerState,
+    date: String?,
     title: String,
     onTitleChanged: (String) -> Unit,
     description: String,
@@ -157,6 +158,7 @@ fun WriteContent(
                     .fillMaxWidth()
                     .height(54 .dp),
                 onClick = {
+                    val journalDate = date ?: formattedCurrentDateTime
                     onSaveClicked(
                         Journal(
                             id = UUID.randomUUID().toString(),
@@ -165,7 +167,7 @@ fun WriteContent(
                             title = title,
                             description = description,
                             images = listOf(),
-                            date = formattedCurrentDateTime
+                            date = journalDate
                         )
                     )
                 },

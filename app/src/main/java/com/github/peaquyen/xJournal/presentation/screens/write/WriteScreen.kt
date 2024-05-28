@@ -54,6 +54,7 @@ fun WriteScreen(
             WriteContent(
                 pagerState = pagerState,
                 paddingValues = it,
+                date = selectedJournal?.date,
                 title = selectedJournal?.title ?: "",
                 onTitleChanged = onTitleChanged,
                 description = selectedJournal?.description ?: "",
