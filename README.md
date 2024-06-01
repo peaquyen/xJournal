@@ -36,6 +36,12 @@ xJournal sử dụng Material 3 để có giao diện người dùng nhất quá
 
 </p>
 
+<img src="https://i.postimg.cc/MGFmKts1/8-Ki-n-tr-c-v-ph-n-chia-ch-c-n-ng-Howkteam-vn.png" alt="Thumbnail ">
+Tầng giao diện (Presentation layer)
+Tầng xử lý nghiệp vụ (Application processing layer)
+Tầng truy cập dữ liệu (Data management layer)
+
+MVVM chia Lớp giao diện người dùng thành hai lớp bổ sung - Chế độ View và ViewModel.
 
 
 # :arrow_lower_right:**Thông_số**:arrow_lower_right:
