@@ -7,7 +7,7 @@ object ApiClient{
 //    private const val BASE_URL = "http://192.168.174.1:3000/"
 //    private const val BASE_URL = "http://192.168.27.88:3000/"
 //    private const val BASE_URL = "http://192.168.1.79:3000/"
-    private const val BASE_URL = "http://192.168.138.248:3000/"
+    private const val BASE_URL = "http://192.168.77.248:3000/"
 
     fun getRetroInstance(): Retrofit {
         val logging = HttpLoggingInterceptor()

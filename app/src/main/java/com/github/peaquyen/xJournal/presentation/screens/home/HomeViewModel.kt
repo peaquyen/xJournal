@@ -22,7 +22,7 @@ class HomeViewModel: ViewModel() {
     var journals = MutableLiveData<RequestState<Map<LocalDate, List<Journal>>>>()
     var filteredJournals = MutableLiveData<RequestState<List<Journal>>>()
     private val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH)
-    private val ownerId: String? = AuthenticationViewModel().getUid()
+    private val ownerId: String = AuthenticationViewModel.ownerId
     init {
         makeApiCall()
     }

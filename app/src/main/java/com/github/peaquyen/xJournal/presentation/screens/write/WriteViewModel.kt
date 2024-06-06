@@ -31,7 +31,6 @@ class WriteViewModel(
 
     val currentTime = getCurrentDateTime()
     val ownerId = AuthenticationViewModel().getUid()
-    //val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
 
     init {
         val journalId = savedStateHandle.get<String>(WRITE_SCREEN_ARGUMENT_KEY)
@@ -89,7 +88,6 @@ class WriteViewModel(
     fun updateJournal(id: String, journal: Journal) {
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                //val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
                 val ownerId = ownerId
 
                 if (ownerId != null) {

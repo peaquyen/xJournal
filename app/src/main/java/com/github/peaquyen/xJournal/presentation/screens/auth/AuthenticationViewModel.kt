@@ -27,7 +27,7 @@ class AuthenticationViewModel : ViewModel() {
     var loadingCreateAccount = mutableStateOf(false)
         private set
 
-    lateinit var ownerId: String
+    //public lateinit var ownerId: String
 
     private val auth: FirebaseAuth by lazy {
         FirebaseAuth.getInstance()
@@ -151,5 +151,9 @@ class AuthenticationViewModel : ViewModel() {
             Log.e(TAG, "sendEmailVerification: failed to send email verification", e)
             throw e
         }
+    }
+
+    companion object {
+        var ownerId: String = AuthenticationViewModel.ownerId
     }
 }

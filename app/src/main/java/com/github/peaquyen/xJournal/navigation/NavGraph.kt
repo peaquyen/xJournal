@@ -113,7 +113,7 @@ fun NavGraphBuilder.authenticationRouter(navigateHome: () -> Unit) {
                         Log.d("Auth", "Successfully Authenticated!")
                         messageBarState.addSuccess("Successfully Authenticated!")
                         viewModel.setGoogleLoading(false)
-                        viewModel.ownerId = App.Companion.create(APP_ID).currentUser?.toString()!!
+                        AuthenticationViewModel.ownerId = App.Companion.create(APP_ID).currentUser?.toString()!!
                     },
                     onError = {
                         Log.d("Auth", "Error: $it")
@@ -132,7 +132,7 @@ fun NavGraphBuilder.authenticationRouter(navigateHome: () -> Unit) {
                         Log.d("Auth", "Successfully Authenticated with Email!")
                         messageBarState.addSuccess("Successfully Authenticated!")
                         viewModel.setEmailLoading(false)
-                        viewModel.ownerId = AuthenticationViewModel().getUid().toString()
+                        AuthenticationViewModel.ownerId = AuthenticationViewModel().getUid().toString()
                     },
                     onError = {
                         Log.d("Auth", "Email Sign-In Error: $it")
@@ -268,7 +268,8 @@ fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed:
     ) {
         val homeViewModel: HomeViewModel = viewModel(navController.getBackStackEntry(Screen.Home.route))
         //val ownerId = App.Companion.create(APP_ID).currentUser?.id
-        val ownerId: String? = AuthenticationViewModel().getUid() // Call getUid() method on the instance
+        val ownerId = AuthenticationViewModel.ownerId
+
 
         val journalId = it.arguments?.getString(WRITE_SCREEN_ARGUMENT_KEY)
         it.savedStateHandle.set(WRITE_SCREEN_ARGUMENT_KEY, journalId)
