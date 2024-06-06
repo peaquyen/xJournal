@@ -22,11 +22,11 @@ class MainActivity : ComponentActivity() {
         WindowCompat.setDecorFitsSystemWindows(window, false)
 
         setContent {
-            xJournalTheme {
+            xJournalTheme(dynamicColor = false) {
                 val navController = rememberNavController()
                 SetUpNavGraph(
                     startDestination = getStartDestination(),
-                    navController = navController
+                    navController = navController,
                 )
             }
         }

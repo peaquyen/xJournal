@@ -169,6 +169,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
 
+    //Material
+    implementation("com.google.android.material:material:1.5.0")
+
 }
 
 // The kotlin block configures the Kotlin plugin for the project.

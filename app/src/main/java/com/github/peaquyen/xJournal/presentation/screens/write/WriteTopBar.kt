@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
+import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material.icons.Icons
@@ -15,22 +16,16 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import com.github.peaquyen.xJournal.model.Feeling
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.util.convertStringToInstant
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 import java.util.Date
 import java.util.Locale
 import java.util.TimeZone
@@ -43,14 +38,14 @@ fun WriteTopBar(
     onBackPressed: () -> Unit,
     onDeleteConfirmed: () -> Unit,
 ) {
-    val currentDate by remember { mutableStateOf(LocalDate.now()) }
-    val currentTime = remember { mutableStateOf(ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))) }
-    val formattedDate = remember(currentDate) {
-        DateTimeFormatter.ofPattern("dd MMM yyyy").format(currentDate).uppercase()
-    }
-    val formattedTime = remember(currentTime) {
-        DateTimeFormatter.ofPattern("hh:mm a").format(currentTime.value).uppercase()
-    }
+//    val currentDate by remember { mutableStateOf(LocalDate.now()) }
+//    val currentTime = remember { mutableStateOf(ZonedDateTime.now(ZoneId.of("Asia/Ho_Chi_Minh"))) }
+//    val formattedDate = remember(currentDate) {
+//        DateTimeFormatter.ofPattern("dd MMM yyyy").format(currentDate).uppercase()
+//    }
+//    val formattedTime = remember(currentTime) {
+//        DateTimeFormatter.ofPattern("hh:mm a").format(currentTime.value).uppercase()
+//    }
 
     val selectedJournalDateTime = remember(selectedJournal) {
         if (selectedJournal?.date != null) {
@@ -61,6 +56,9 @@ fun WriteTopBar(
             "Unknown"
         }
     }
+
+    Log.d("WriteScreen", "selectedJournalDateTime: $selectedJournalDateTime")
+
     CenterAlignedTopAppBar(
         navigationIcon = {
             IconButton(onClick = onBackPressed){
@@ -85,8 +83,7 @@ fun WriteTopBar(
 
                 Text(
                     modifier = Modifier.fillMaxWidth(),
-                    text = if (selectedJournal != null) selectedJournalDateTime
-                            else "$formattedDate $formattedTime",
+                    text = selectedJournalDateTime,
                     style = TextStyle(
                         fontSize = MaterialTheme.typography.titleSmall.fontSize
                     ),

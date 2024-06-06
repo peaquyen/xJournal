@@ -16,6 +16,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
@@ -25,6 +26,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.github.peaquyen.xJournal.data.repository.JournalRepository
 import com.github.peaquyen.xJournal.model.Feeling
+import com.github.peaquyen.xJournal.model.RequestState
 import com.github.peaquyen.xJournal.presentation.components.DisplayAlertDialog
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationScreen
 import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
@@ -36,13 +38,13 @@ import com.github.peaquyen.xJournal.presentation.screens.write.WriteViewModelFac
 import com.github.peaquyen.xJournal.util.Constants
 import com.github.peaquyen.xJournal.util.Constants.APP_ID
 import com.github.peaquyen.xJournal.util.Constants.WRITE_SCREEN_ARGUMENT_KEY
-import com.github.peaquyen.xJournal.util.RequestState
 import com.stevdzasan.messagebar.rememberMessageBarState
 import com.stevdzasan.onetap.rememberOneTapSignInState
 import io.realm.kotlin.mongodb.App
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.time.LocalDate
 
 // draw the navigation graph
 // startDestination: the first screen to show
@@ -68,7 +70,7 @@ fun SetUpNavGraph(startDestination: String, navController: NavHostController ) {
             navigateToAuth = {
                 navController.popBackStack()
                 navController.navigate(Screen.Authentication.route)
-            }
+            },
         )
         writeRouter(
             navController = navController,
@@ -129,15 +131,16 @@ fun NavGraphBuilder.authenticationRouter(
 fun NavGraphBuilder.homeRouter(
     navigateToWrite: () -> Unit,
     navigateToWriteWithArgs: (String) -> Unit,
-    navigateToAuth: () -> Unit
+    navigateToAuth: () -> Unit,
 ) {
     composable(route = Screen.Home.route) {
         val viewModel: HomeViewModel = viewModel()
         val journals by viewModel.getObserveJournals().observeAsState(initial = RequestState.Loading)
-        Log.d("HomeRouter", "journals: $journals")
+        val filteredJournals by viewModel.getFilteredJournals().observeAsState(initial = RequestState.Loading)
         val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
         var signOutDialogOpened by remember{ mutableStateOf(false) }
         val scope = rememberCoroutineScope()
+        var selectedDate by remember { mutableStateOf<LocalDate?>(null) }
 
         LaunchedEffect(Unit) {
             viewModel.refreshJournals() // Fetch the latest data when the screen is composed
@@ -159,6 +162,18 @@ fun NavGraphBuilder.homeRouter(
             },
             navigateToWriteWithArgs = {
                 navigateToWriteWithArgs(it)
+            },
+            context = LocalContext.current,
+            filteredJournals = (filteredJournals as? RequestState.Success)?.data,
+            selectedDate = selectedDate,
+            onDateSelected = { date ->
+                selectedDate = date
+                viewModel.filterJournalsByDate(date)
+            },
+            onTitleClick = {
+                selectedDate = null
+                viewModel.resetFilters()
+                viewModel.refreshJournals()
             }
         )
 
@@ -199,9 +214,7 @@ fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed 
     ) {
         // Get the HomeViewModel from the previous back stack entry
         val homeViewModel: HomeViewModel = viewModel(navController.getBackStackEntry(Screen.Home.route))
-
         val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
-
         val journalId = it.arguments?.getString(WRITE_SCREEN_ARGUMENT_KEY)
         it.savedStateHandle.set(WRITE_SCREEN_ARGUMENT_KEY, journalId)
 
@@ -210,12 +223,15 @@ fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed 
         )
 
         val selectedJournal by viewModel.selectedJournal.observeAsState()
+        val galleryState = viewModel.galleryState
+        val context = LocalContext.current
         val pagerState = rememberPagerState(pageCount = { Feeling.entries.size })
         val pageNumber by remember{ derivedStateOf{pagerState.currentPage} }
         // WriteScreen
         if (ownerId != null) {
             WriteScreen(
                 pagerState = pagerState,
+                galleryState = galleryState,
                 selectedJournal = selectedJournal,
                 feelingName = {
                     Feeling.entries[pageNumber].name
@@ -241,7 +257,12 @@ fun NavGraphBuilder.writeRouter(navController: NavHostController, onBackPressed 
                     homeViewModel.refreshJournals()
                     onBackPressed()
                 },
-                ownerId = ownerId
+                ownerId = ownerId,
+                onImageSelect = {
+                    val type = context.contentResolver.getType(it)?.split("/")?.last() ?: "jpg"
+                    Log.d("WriteViewModel", "Uri: $it")
+                    viewModel.addImage(imageUri = it, imageType =type)
+                }
             )
         }
     }

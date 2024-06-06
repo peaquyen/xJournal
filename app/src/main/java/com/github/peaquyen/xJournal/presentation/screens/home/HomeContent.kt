@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.screens.home
 
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,7 +24,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.github.peaquyen.xJournal.data.repository.Journals
 import com.github.peaquyen.xJournal.model.Journal
 import com.github.peaquyen.xJournal.presentation.components.JournalHolder
 import java.time.LocalDate
@@ -33,26 +33,41 @@ import java.time.LocalDate
 fun HomeContent(
     paddingValues: PaddingValues,
     journalNotes: Map<LocalDate, List<Journal>>,
-    onClick: (String) -> Unit
+    onClick: (String) -> Unit,
+    filteredJournals: List<Journal>?,
 ) {
-    if (journalNotes.isNotEmpty()) {
+    val displayJournals = if (filteredJournals.isNullOrEmpty()) journalNotes.flatMap { it.value } else filteredJournals
+    Log.d("HomeContent", "filteredJournals: $filteredJournals")
+    Log.d("HomeContent", "journalNotes: $journalNotes")
+
+
+    if (displayJournals.isNotEmpty()) {
         LazyColumn(
             modifier = Modifier
                 .padding(horizontal = 24.dp)
                 .navigationBarsPadding()
                 .padding(top = paddingValues.calculateTopPadding())
         ) {
-            journalNotes.forEach { (localDate, journals) ->
-                // stickyHeader is a sticky header that will stick to the top of the list
-                stickyHeader(key = localDate) {
-                    DateHeader(localDate)
-                }
-
+            if (!filteredJournals.isNullOrEmpty()) {
                 items(
-                    items = journals,
-                    key = { journal ->  journal.id }
-                ) {journal ->
+                    items = displayJournals,
+                    key = { journal -> journal.id }
+                ) { journal ->
                     JournalHolder(journal = journal, onClick = onClick)
+                }
+            } else {
+                journalNotes.forEach { (localDate, journals) ->
+                    // stickyHeader is a sticky header that will stick to the top of the list
+                    stickyHeader(key = localDate) {
+                        DateHeader(localDate)
+                    }
+
+                    items(
+                        items = journals,
+                        key = { journal -> journal.id }
+                    ) { journal ->
+                        JournalHolder(journal = journal, onClick = onClick)
+                    }
                 }
             }
         }
@@ -60,6 +75,7 @@ fun HomeContent(
         EmptyPage()
     }
 }
+
 
 @Composable
 fun DateHeader(LocalDate: LocalDate) {

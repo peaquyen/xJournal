@@ -17,6 +17,9 @@ interface ApiService {
 
     @GET("journals/{ownerId}")
     suspend fun getAllJournals(@Path("ownerId") ownerId: String): Response<List<Journal>>
+    @GET("journals/{ownerId}/date/{date}")
+    suspend fun getJournalsByDate(@Path("ownerId") ownerId: String, @Path("date") date: String): Response<List<Journal>>
+
     @GET("journals/{ownerId}/{id}")
     suspend fun getJournal(@Path("id") id: String, @Path("ownerId") ownerId: String?): Response<Journal>
     @POST("journals/")
