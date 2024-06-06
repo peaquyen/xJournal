@@ -1,5 +1,6 @@
 package com.github.peaquyen.xJournal.presentation.screens.write
 
+import android.net.Uri
 import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
@@ -26,23 +27,23 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.FocusDirection
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.LiveData
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.github.peaquyen.xJournal.model.Feeling
+import com.github.peaquyen.xJournal.model.GalleryState
 import com.github.peaquyen.xJournal.model.Journal
-import com.github.peaquyen.xJournal.util.Constants.CLIENT_ID
+import com.github.peaquyen.xJournal.presentation.components.GalleryUploader
 import com.github.peaquyen.xJournal.util.getCurrentDateTime
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
-import java.util.Locale
+import kotlinx.coroutines.launch
 import java.util.UUID
 
 @OptIn(ExperimentalFoundationApi::class, ExperimentalMaterial3Api::class)
@@ -50,18 +51,23 @@ import java.util.UUID
 fun WriteContent(
     paddingValues: PaddingValues,
     pagerState : PagerState,
+    galleryState: GalleryState,
     date: String?,
     title: String,
     onTitleChanged: (String) -> Unit,
     description: String,
     onDescriptionChanged: (String) -> Unit,
     onSaveClicked: (Journal) -> Unit,
-    ownerId : String
+    ownerId : String,
+    onImageSelect : (Uri) -> Unit
 ) {
     val scrollState = rememberScrollState()
-
+    val scope = rememberCoroutineScope()
     // Get Date Time Current for Journal to be created
     val currentTime = getCurrentDateTime()
+    val focusManager = LocalFocusManager.current
+
+    Log.d("WriteScreen", "date: $date")
 
     Column(
         modifier = Modifier
@@ -116,7 +122,10 @@ fun WriteContent(
                 ),
                 keyboardActions = KeyboardActions(
                     onNext = {
-
+                        scope.launch {
+                            scrollState.animateScrollTo(Int.MAX_VALUE)
+                            focusManager.moveFocus(FocusDirection.Down)
+                        }
                     }
                 ),
                 maxLines = 1,
@@ -143,12 +152,22 @@ fun WriteContent(
                 ),
                 keyboardActions = KeyboardActions(
                     onNext = {
+                        focusManager.clearFocus()
                     }
                 )
             )
         }
         Column(verticalArrangement = Arrangement.Bottom) {
             Spacer(modifier = Modifier.height(12.dp))
+            GalleryUploader(
+                galleryState = galleryState,
+                onAddClick = { focusManager.clearFocus() },
+                onImageClick = {},
+                onImageSelect = onImageSelect
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
             Button(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -162,7 +181,7 @@ fun WriteContent(
                             feeling = Feeling.entries[pagerState.currentPage].name,
                             title = title,
                             description = description,
-                            images = listOf(),
+                            images = galleryState.images.map { it.remoteImagePath },
                             date = journalDate
                         )
                     )

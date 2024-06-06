@@ -94,6 +94,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.firebase.auth.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -112,8 +113,13 @@ dependencies {
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room_version")
 
-    // Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:32.8.1"))
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-auth-ktx")
+//    implementation ("com.google.firebase:firebase-core:21.0.1")
 
     // Runtime Compose
     implementation("androidx.compose.runtime:runtime:1.6.6")
@@ -168,6 +174,9 @@ dependencies {
     //lifeCycle
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
+
+    //Material
+    implementation("com.google.android.material:material:1.5.0")
 
 }
 

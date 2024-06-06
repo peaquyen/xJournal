@@ -1,19 +1,20 @@
 package com.github.peaquyen.xJournal.data.repository
 
+import ApiClient
 import android.util.Log
 import com.github.peaquyen.xJournal.model.Journal
-import com.github.peaquyen.xJournal.util.Constants
-import io.realm.kotlin.mongodb.App
+import com.github.peaquyen.xJournal.presentation.screens.auth.AuthenticationViewModel
 import retrofit2.Response
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+
 class JournalRepository {
     private val apiService: ApiService = ApiClient.getRetroInstance().create(ApiService::class.java)
+    var ownerId = AuthenticationViewModel.ownerId
 
     suspend fun getJournal(id: String): Journal {
         val response: Response<Journal> = try {
-            val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
-            apiService.getJournal(id, ownerId)
+            //val ownerId = App.Companion.create(Constants.APP_ID).currentUser?.id
+            val ownerId = ownerId
+            apiService.getJournal(id, ownerId.toString())
         } catch (e: Exception) {
             Log.e("JournalRepository", "Network call failed", e)
             throw Exception("Network call failed: ${e.message}", e)

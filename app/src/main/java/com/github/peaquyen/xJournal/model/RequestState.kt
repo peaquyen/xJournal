@@ -1,4 +1,4 @@
-package com.github.peaquyen.xJournal.util
+package com.github.peaquyen.xJournal.model
 
 sealed class RequestState<out T> {
     object Idle : RequestState<Nothing>()

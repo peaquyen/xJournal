@@ -1,7 +1,8 @@
 package com.github.peaquyen.xJournal.presentation.screens.home
 
 import android.annotation.SuppressLint
-import android.util.Log
+import android.app.DatePickerDialog
+import android.content.Context
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -24,7 +25,6 @@ import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
-import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -33,8 +33,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.R
 import com.github.peaquyen.xJournal.model.Journal
-import com.github.peaquyen.xJournal.util.RequestState
+import com.github.peaquyen.xJournal.model.RequestState
 import java.time.LocalDate
+import java.util.Calendar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -46,66 +47,76 @@ fun HomeScreen(
     onMenuClick: () -> Unit,
     navigateToWrite: () -> Unit,
     navigateToWriteWithArgs: (String) -> Unit,
-
-    ) {
+    context: Context,
+    filteredJournals: List<Journal>?,
+    selectedDate: LocalDate?,
+    onDateSelected: (LocalDate) -> Unit,
+    onTitleClick : () -> Unit
+) {
     val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
-   NavigationDrawer(
-         drawerState = drawerState,
-         onSignOutClick = onSignOutClick,
-   ) {
-       Scaffold(
-           modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection), // Enable nested scrolling
-           topBar = {
-               HomeTopBar(
-                   scrollBehavior = scrollBehavior,
-                   onMenuClick = onMenuClick
-               )
-           },
 
-           // floating action button to navigate to write screen
-           floatingActionButton = {
-               FloatingActionButton(
-                   onClick = navigateToWrite
-               ) {
-                   Icon(
-                       imageVector = Icons.Default.Edit,
-                       contentDescription = "New xJournal Icon"
-                   )
-               }
-           },
-           content = {
-               when (journals) {
-                   is RequestState.Loading -> {
-                       // Display a loading indicator
-                   }
-
-                   is RequestState.Error -> {
-                       EmptyPage(
-                           title = "Error",
-                           subtitle = "Error: ${journals.exception.message}",
-                       )
-                   }
-
-                   is RequestState.Success -> {
-                       val journalNotes = (journals as RequestState.Success).data
-                       HomeContent(
-                           paddingValues = it,
-                           journalNotes = journalNotes,
-                           onClick = navigateToWriteWithArgs
-                       )
-                       // Log the journal entries
-                       journalNotes.entries.forEachIndexed { index, entry ->
-                            val date = entry.key
-                            val journals = entry.value
-                            Log.d("JournalList", "Entry $index: Date = $date, Journals = $journals")
-                        }
-                   }
-
-                   RequestState.Idle -> TODO()
-               }
-           }
-       )
-   }
+    val onCalendarClick: () -> Unit = {
+        val calendar = Calendar.getInstance()
+        DatePickerDialog(
+            context,
+            { _, year, month, dayOfMonth ->
+                val selectedDate = LocalDate.of(year, month + 1, dayOfMonth)
+                onDateSelected(selectedDate)
+            },
+            calendar.get(Calendar.YEAR),
+            calendar.get(Calendar.MONTH),
+            calendar.get(Calendar.DAY_OF_MONTH)
+        ).show()
+    }
+    NavigationDrawer(
+        drawerState = drawerState,
+        onSignOutClick = onSignOutClick,
+    ) {
+        Scaffold(
+            modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
+            topBar = {
+                HomeTopBar(
+                    scrollBehavior = scrollBehavior,
+                    onMenuClick = onMenuClick,
+                    onCalendarClick = onCalendarClick,
+                    onTitleClick = onTitleClick
+                )
+            },
+            floatingActionButton = {
+                FloatingActionButton(
+                    onClick = navigateToWrite
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Edit,
+                        contentDescription = "New xJournal Icon"
+                    )
+                }
+            },
+            content = {
+                when (journals) {
+                    is RequestState.Loading -> {
+                        // Display a loading indicator
+                    }
+                    is RequestState.Error -> {
+                        EmptyPage(
+                            title = "Error",
+                            subtitle = "Error: ${journals.exception.message}",
+                        )
+                    }
+                    is RequestState.Success -> {
+                        val journalNotes = journals.data
+                        HomeContent(
+                            paddingValues = it,
+                            journalNotes = journalNotes,
+                            onClick = navigateToWriteWithArgs,
+                            filteredJournals = filteredJournals
+                        )
+                    }
+                    RequestState.Idle -> TODO()
+                }
+            }
+        )
+    }
 }
 
 @Composable

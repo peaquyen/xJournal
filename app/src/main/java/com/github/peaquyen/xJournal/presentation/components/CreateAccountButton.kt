@@ -1,6 +1,5 @@
 package com.github.peaquyen.xJournal.presentation.components
 
-import android.util.Log
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.LinearOutSlowInEasing
 import androidx.compose.animation.core.tween
@@ -34,17 +33,17 @@ import androidx.compose.ui.unit.dp
 import com.github.peaquyen.xJournal.R
 
 @Composable
-fun GoogleButton(
+fun CreateAccountButton(
     modifier: Modifier = Modifier,
     loadingState: Boolean = false,
-    primaryText: String = "Sign in with Google",
+    primaryText: String = "Create account",
     secondaryText: String = "Please wait...",
-    icon: Int = R.drawable.google_logo,
+    icon: Int = R.drawable.email_icon,
     shape: Shape = Shapes().extraSmall,
     borderColor: Color = MaterialTheme.colorScheme.surfaceVariant,
     backgroundColor: Color = MaterialTheme.colorScheme.surface,
     borderStrokeWidth: Dp = 1.dp,
-    progressIndicatorColor: Color = MaterialTheme.colorScheme.primary,
+    //progressIndicatorColor: Color = MaterialTheme.colorScheme.primary,
     onClick: () -> Unit
 ) {
     var buttonText by remember { mutableStateOf(primaryText) }
@@ -75,7 +74,7 @@ fun GoogleButton(
         ) {
             Icon(
                 painter = painterResource(id = icon),
-                contentDescription = "Google Logo",
+                contentDescription = "Email Logo",
                 tint = Color.Unspecified
             )
             Spacer(modifier = Modifier.width(8.dp))
@@ -84,7 +83,6 @@ fun GoogleButton(
                 style = TextStyle(fontSize = MaterialTheme.typography.bodyMedium.fontSize)
             )
             if (loadingState) {
-                Log.d("GoogleButton", "loadingState: $loadingState")
                 Spacer(modifier = Modifier.width(16.dp))
 //                CircularProgressIndicator(
 //                    modifier = Modifier.size(16.dp),

@@ -122,7 +122,7 @@ fun JournalHolder(
                     ),
                 ) {
                     Column(modifier = Modifier.padding(all = 14.dp)) {
-                        journal.images?.let { Gallery(images = it) }
+                        journal.images.let { Gallery(images = it) }
                     }
                 }
             }

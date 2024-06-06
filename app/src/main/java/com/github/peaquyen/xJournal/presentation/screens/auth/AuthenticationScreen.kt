@@ -16,19 +16,21 @@ import com.stevdzasan.messagebar.ContentWithMessageBar
 import com.stevdzasan.messagebar.MessageBarState
 import com.stevdzasan.onetap.OneTapSignInState
 import com.stevdzasan.onetap.OneTapSignInWithGoogle
-import java.lang.Exception
-import java.net.Authenticator
 
 @ExperimentalMaterial3Api
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun AuthenticationScreen(
     authenticated: Boolean,
-    loadingState: Boolean,
+    loadingGoogleState: Boolean,
+    loadingEmailState: Boolean,
+    loadingCreateAccount: Boolean,
     oneTapState: OneTapSignInState,
     messageBarState: MessageBarState,
     onButtonClicked: () -> Unit,
     onTokenIdReceived: (String) -> Unit,
+    onEmailPasswordReceived: (String, String) -> Unit,
+    onCreateAccount: (String, String) -> Unit,
     onDialogDismissed: (String) -> Unit,
     navigateHome: () -> Unit
 ) {
@@ -41,8 +43,18 @@ fun AuthenticationScreen(
         content = {
             ContentWithMessageBar(messageBarState = messageBarState) {
                 AuthenticationContent(
-                    loadingState = loadingState,
-                    onButtonClicked = onButtonClicked
+                    loadingGoogleState = loadingGoogleState,
+                    onGoogleButtonClicked = onButtonClicked,
+                    loadingCreateAccount = loadingCreateAccount,
+                    loadingEmailState = loadingEmailState,
+                    onEmailSignIn = { email, password ->
+                        Log.d("Auth", "Email: $email, Password: $password")
+                        onEmailPasswordReceived(email, password)
+                    },
+                    onCreateAccount = { email, password ->
+                        Log.d("Auth", "Create Account with Email: $email, Password: $password")
+                        onCreateAccount(email, password)
+                    }
                 )
             }
         }
